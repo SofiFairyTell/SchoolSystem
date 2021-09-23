@@ -54,7 +54,7 @@
             this.ДеньНедели = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Н_класса = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listView4 = new System.Windows.Forms.ListView();
-            this.button14 = new System.Windows.Forms.Button();
+            this.ОтменаСортировкиРасписание = new System.Windows.Forms.Button();
             this.НайтиКласс = new System.Windows.Forms.Button();
             this.КлассыСписок = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -136,12 +136,12 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listView5 = new System.Windows.Forms.ListView();
-            this.button15 = new System.Windows.Forms.Button();
+            this.ОтменаСортировкиСоставление = new System.Windows.Forms.Button();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.button11 = new System.Windows.Forms.Button();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
+            this.ДобавитьРасписание = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -297,7 +297,7 @@
             this.tabPage2.BackColor = System.Drawing.Color.Linen;
             this.tabPage2.Controls.Add(this.РасписаниеЗанятий);
             this.tabPage2.Controls.Add(this.listView4);
-            this.tabPage2.Controls.Add(this.button14);
+            this.tabPage2.Controls.Add(this.ОтменаСортировкиРасписание);
             this.tabPage2.Controls.Add(this.НайтиКласс);
             this.tabPage2.Controls.Add(this.КлассыСписок);
             this.tabPage2.Controls.Add(this.label1);
@@ -380,18 +380,18 @@
             this.listView4.UseCompatibleStateImageBehavior = false;
             this.listView4.View = System.Windows.Forms.View.SmallIcon;
             // 
-            // button14
+            // ОтменаСортировкиРасписание
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.Window;
-            this.button14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button14.Location = new System.Drawing.Point(459, 14);
-            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(300, 34);
-            this.button14.TabIndex = 108;
-            this.button14.Text = "Отменить сортировку";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.ОтменаСортировкиРасписание.BackColor = System.Drawing.SystemColors.Window;
+            this.ОтменаСортировкиРасписание.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ОтменаСортировкиРасписание.Location = new System.Drawing.Point(459, 14);
+            this.ОтменаСортировкиРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ОтменаСортировкиРасписание.Name = "ОтменаСортировкиРасписание";
+            this.ОтменаСортировкиРасписание.Size = new System.Drawing.Size(300, 34);
+            this.ОтменаСортировкиРасписание.TabIndex = 108;
+            this.ОтменаСортировкиРасписание.Text = "Отменить сортировку";
+            this.ОтменаСортировкиРасписание.UseVisualStyleBackColor = false;
+            this.ОтменаСортировкиРасписание.Click += new System.EventHandler(this.ОтменаСортировкиРасписание_Click);
             // 
             // НайтиКласс
             // 
@@ -1274,12 +1274,12 @@
             this.tabPage3.BackColor = System.Drawing.Color.Linen;
             this.tabPage3.Controls.Add(this.СоставлениеРасписания);
             this.tabPage3.Controls.Add(this.listView5);
-            this.tabPage3.Controls.Add(this.button15);
+            this.tabPage3.Controls.Add(this.ОтменаСортировкиСоставление);
             this.tabPage3.Controls.Add(this.comboBox12);
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Controls.Add(this.comboBox14);
             this.tabPage3.Controls.Add(this.label37);
-            this.tabPage3.Controls.Add(this.button10);
+            this.tabPage3.Controls.Add(this.ДобавитьРасписание);
             this.tabPage3.Controls.Add(this.label38);
             this.tabPage3.Controls.Add(this.comboBox13);
             this.tabPage3.Controls.Add(this.label35);
@@ -1370,18 +1370,18 @@
             this.listView5.UseCompatibleStateImageBehavior = false;
             this.listView5.View = System.Windows.Forms.View.SmallIcon;
             // 
-            // button15
+            // ОтменаСортировкиСоставление
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.Window;
-            this.button15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button15.Location = new System.Drawing.Point(489, 57);
-            this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(300, 34);
-            this.button15.TabIndex = 109;
-            this.button15.Text = "Отменить сортировку";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.ОтменаСортировкиСоставление.BackColor = System.Drawing.SystemColors.Window;
+            this.ОтменаСортировкиСоставление.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ОтменаСортировкиСоставление.Location = new System.Drawing.Point(489, 57);
+            this.ОтменаСортировкиСоставление.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ОтменаСортировкиСоставление.Name = "ОтменаСортировкиСоставление";
+            this.ОтменаСортировкиСоставление.Size = new System.Drawing.Size(300, 34);
+            this.ОтменаСортировкиСоставление.TabIndex = 109;
+            this.ОтменаСортировкиСоставление.Text = "Отменить сортировку";
+            this.ОтменаСортировкиСоставление.UseVisualStyleBackColor = false;
+            this.ОтменаСортировкиСоставление.Click += new System.EventHandler(this.ОтменитьСортировку_Click);
             // 
             // comboBox12
             // 
@@ -1451,18 +1451,18 @@
             this.label37.TabIndex = 52;
             this.label37.Text = "Выбретите класс";
             // 
-            // button10
+            // ДобавитьРасписание
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.Window;
-            this.button10.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.Location = new System.Drawing.Point(1011, 383);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(284, 87);
-            this.button10.TabIndex = 51;
-            this.button10.Text = "Добавить в расписание";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.ДобавитьРасписание.BackColor = System.Drawing.SystemColors.Window;
+            this.ДобавитьРасписание.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ДобавитьРасписание.Location = new System.Drawing.Point(1011, 383);
+            this.ДобавитьРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ДобавитьРасписание.Name = "ДобавитьРасписание";
+            this.ДобавитьРасписание.Size = new System.Drawing.Size(284, 87);
+            this.ДобавитьРасписание.TabIndex = 51;
+            this.ДобавитьРасписание.Text = "Добавить в расписание";
+            this.ДобавитьРасписание.UseVisualStyleBackColor = false;
+            this.ДобавитьРасписание.Click += new System.EventHandler(this.ДобавитьРасписание_Click);
             // 
             // label38
             // 
@@ -2151,7 +2151,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button ДобавитьРасписание;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.Label label35;
@@ -2173,8 +2173,8 @@
         private System.Windows.Forms.Button Найти;
         private System.Windows.Forms.Button ОтменитьСортировку;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button ОтменаСортировкиРасписание;
+        private System.Windows.Forms.Button ОтменаСортировкиСоставление;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label40;
