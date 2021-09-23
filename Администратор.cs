@@ -454,7 +454,6 @@ namespace WindowsFormsApp1
                 command.Parameters.AddWithValue("ID_Учитель", textBox6.Text);
                 await command.ExecuteNonQueryAsync();
                 MessageBox.Show("Учитель удален");
-
             }
             else
             {
@@ -462,9 +461,8 @@ namespace WindowsFormsApp1
             }
         }
 
-        private async void button11_Click(object sender, EventArgs e) //сортировка по классам при составлении расписания
+        private async void СортировкаРасписание_Click(object sender, EventArgs e) //сортировка по классам при составлении расписания
         {
-
                 listView5.Items.Clear();
                 if (!string.IsNullOrEmpty(comboBox14.Text) && !string.IsNullOrWhiteSpace(comboBox14.Text)) 
                 {
@@ -476,7 +474,15 @@ namespace WindowsFormsApp1
                         SqlReader = await command.ExecuteReaderAsync();
                         while (await SqlReader.ReadAsync())
                         {
-                        listView5.Items.Add(Convert.ToString(SqlReader["Id"]) + "          " + Convert.ToString(SqlReader["Класс"]) + "          " + Convert.ToString(SqlReader["День_недели"]) + "          " + Convert.ToString(SqlReader["Время_урока"]) + "          " + Convert.ToString(SqlReader["Предмет"]) + "          " + Convert.ToString(SqlReader["ФИО_учителя"]) + "          " + Convert.ToString(SqlReader["Номер_кабинета"]));
+                        РасписаниеЗанятий.Rows.Add(
+                                Convert.ToString(SqlReader["Номер_кабинета"]),
+                                Convert.ToString(SqlReader["Время_урока"]),
+                                Convert.ToString(SqlReader["Предмет"]),
+                                Convert.ToString(SqlReader["ФИО_учителя"]),
+                                Convert.ToString(SqlReader["День_недели"]),
+                                Convert.ToString(SqlReader["Класс"])
+                                );
+                        //listView5.Items.Add(Convert.ToString(SqlReader["Id"]) + "          " + Convert.ToString(SqlReader["Класс"]) + "          " + Convert.ToString(SqlReader["День_недели"]) + "          " + Convert.ToString(SqlReader["Время_урока"]) + "          " + Convert.ToString(SqlReader["Предмет"]) + "          " + Convert.ToString(SqlReader["ФИО_учителя"]) + "          " + Convert.ToString(SqlReader["Номер_кабинета"]));
                         }
                     }
                     catch (Exception ex)
@@ -502,20 +508,28 @@ namespace WindowsFormsApp1
                 sqlConnection.Close();
         }
 
-        private async void НайтиКласс_Click(object sender, EventArgs e) //расписание
+        private async void НайтиРасписание_Click(object sender, EventArgs e) //расписание
         {
             listView4.Items.Clear();
-            if (!string.IsNullOrEmpty(comboBox2.Text) && !string.IsNullOrWhiteSpace(comboBox2.Text))
+            if (!string.IsNullOrEmpty(КлассыСписок.Text) && !string.IsNullOrWhiteSpace(КлассыСписок.Text))
             {
                 SqlDataReader SqlReader = null;
                 SqlCommand command = new SqlCommand("SELECT * FROM [Составление_расписания] WHERE [Класс] = @Класс", sqlConnection);
-                command.Parameters.AddWithValue("Класс", comboBox2.Text);
+                command.Parameters.AddWithValue("Класс", КлассыСписок.Text);
                 try
                 {
                     SqlReader = await command.ExecuteReaderAsync();
                     while (await SqlReader.ReadAsync())
                     {
-                        listView4.Items.Add((SqlReader["Id"]) + "          " + Convert.ToString(SqlReader["Класс"]) + "          " + Convert.ToString(SqlReader["День_недели"]) + "          " + Convert.ToString(SqlReader["Время_урока"]) + "          " + Convert.ToString(SqlReader["Предмет"]) + "          " + Convert.ToString(SqlReader["ФИО_учителя"]) + "          " + Convert.ToString(SqlReader["Номер_кабинета"]));
+                        РасписаниеЗанятий.Rows.Add(
+                            Convert.ToString(SqlReader["Номер_кабинета"]),
+                            Convert.ToString(SqlReader["Время_урока"]),
+                            Convert.ToString(SqlReader["Предмет"]),
+                            Convert.ToString(SqlReader["ФИО_учителя"]),
+                            Convert.ToString(SqlReader["День_недели"]),
+                            Convert.ToString(SqlReader["Класс"])
+                            );
+                       // listView4.Items.Add((SqlReader["Id"]) + "          " + Convert.ToString(SqlReader["Класс"]) + "          " + Convert.ToString(SqlReader["День_недели"]) + "          " + Convert.ToString(SqlReader["Время_урока"]) + "          " + Convert.ToString(SqlReader["Предмет"]) + "          " + Convert.ToString(SqlReader["ФИО_учителя"]) + "          " + Convert.ToString(SqlReader["Номер_кабинета"]));
                     }
                 }
                 catch (Exception ex)
@@ -527,7 +541,6 @@ namespace WindowsFormsApp1
                     if (SqlReader != null)
                         SqlReader.Close();
                 }
-
             }
             else
             {
@@ -535,41 +548,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private async void button4_Click_1(object sender, EventArgs e)
-        {
-            listView2.Items.Clear();
-            if (!string.IsNullOrEmpty(comboBox3.Text) && !string.IsNullOrWhiteSpace(comboBox3.Text))
-            {
-                SqlDataReader SqlReader = null;
-                SqlCommand command = new SqlCommand("SELECT * FROM [Ученик] WHERE [Класс] = @Класс", sqlConnection);
-                command.Parameters.AddWithValue("Класс", comboBox3.Text);
-                try
-                {
-                    SqlReader = await command.ExecuteReaderAsync();
-                    while (await SqlReader.ReadAsync())
-                    {
-                        listView2.Items.Add(Convert.ToString(SqlReader["Id_Ученик"]) + "          " + Convert.ToString(SqlReader["Фамилия"]) + "          " + Convert.ToString(SqlReader["Имя"]) + "          " + Convert.ToString(SqlReader["Отчество"]) + "          " + Convert.ToString(SqlReader["Класс"]));
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message.ToString(), ex.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    if (SqlReader != null)
-                        SqlReader.Close();
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("Поле 'Предмет' должно быть заполнено!");
-            }
-        }
-
-        private async void button12_Click(object sender, EventArgs e)// отмена сортировки учеников
+        private async void ОтменитьСортировку_Click(object sender, EventArgs e)// отмена сортировки учеников
         {
             listView2.Items.Clear();
             //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
@@ -582,6 +561,7 @@ namespace WindowsFormsApp1
                 SqlReader = await command.ExecuteReaderAsync();
                 while (await SqlReader.ReadAsync())
                 {
+
                     listView2.Items.Add(Convert.ToString(SqlReader["Id_Ученик"]) + "          " + Convert.ToString(SqlReader["Фамилия"]) + "          " + Convert.ToString(SqlReader["Имя"]) + "          " + Convert.ToString(SqlReader["Отчество"]) + "          " + Convert.ToString(SqlReader["Класс"]));
                 }
             }
@@ -626,6 +606,7 @@ namespace WindowsFormsApp1
         private async void button14_Click(object sender, EventArgs e)
         {
             listView4.Items.Clear();
+            РасписаниеЗанятий.Rows.Clear();
             //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString); //расписание
             await sqlConnection.OpenAsync();
@@ -636,7 +617,16 @@ namespace WindowsFormsApp1
                 SqlReader3 = await command3.ExecuteReaderAsync();
                 while (await SqlReader3.ReadAsync())
                 {
-                    listView4.Items.Add((SqlReader3["Id"]) + "          " + Convert.ToString(SqlReader3["Класс"]) + "          " + Convert.ToString(SqlReader3["День_недели"]) + "          " + Convert.ToString(SqlReader3["Время_урока"]) + "          " + Convert.ToString(SqlReader3["Предмет"]) + "          " + Convert.ToString(SqlReader3["ФИО_учителя"]) + "          " + Convert.ToString(SqlReader3["Номер_кабинета"]));
+                    РасписаниеЗанятий.Rows.Add(
+                        Convert.ToString(SqlReader3["Номер_кабинета"]),
+                        Convert.ToString(SqlReader3["Время_урока"]),
+                        Convert.ToString(SqlReader3["Предмет"]),
+                        Convert.ToString(SqlReader3["ФИО_учителя"]),
+                        Convert.ToString(SqlReader3["День_недели"]),
+                        Convert.ToString(SqlReader3["Класс"])
+                        );
+
+                    // listView4.Items.Add((SqlReader3["Id"]) + "          " + Convert.ToString(SqlReader3["Класс"]) + "          " + Convert.ToString(SqlReader3["День_недели"]) + "          " + Convert.ToString(SqlReader3["Время_урока"]) + "          " + Convert.ToString(SqlReader3["Предмет"]) + "          " + Convert.ToString(SqlReader3["ФИО_учителя"]) + "          " + Convert.ToString(SqlReader3["Номер_кабинета"]));
                 }
             }
             catch (Exception ex)
@@ -661,16 +651,17 @@ namespace WindowsFormsApp1
             SqlCommand command3 = new SqlCommand("SELECT * FROM [Составление_расписания]", sqlConnection);
             try
             {
-                int i = 0;
                 SqlReader3 = await command3.ExecuteReaderAsync();
                 while (await SqlReader3.ReadAsync())
                 {
-                    РасписаниеЗанятий.Rows[i].Cells[0].Value = Convert.ToString(SqlReader3["Номер_кабинета"]);
-                    РасписаниеЗанятий.Rows[i].Cells[1].Value = Convert.ToString(SqlReader3["Время_урока"]);
-                    РасписаниеЗанятий.Rows[i].Cells[2].Value = Convert.ToString(SqlReader3["Предмет"]);
-                    РасписаниеЗанятий.Rows[i].Cells[3].Value = Convert.ToString(SqlReader3["ФИО_учителя"]);
-                    РасписаниеЗанятий.Rows[i].Cells[4].Value = Convert.ToString(SqlReader3["День_недели"]);
-                    РасписаниеЗанятий.Rows[i].Cells[5].Value = Convert.ToString(SqlReader3["Класс"]);
+                    РасписаниеЗанятий.Rows.Add(
+                        Convert.ToString(SqlReader3["Номер_кабинета"]),
+                        Convert.ToString(SqlReader3["Время_урока"]),
+                        Convert.ToString(SqlReader3["Предмет"]),
+                        Convert.ToString(SqlReader3["ФИО_учителя"]),
+                        Convert.ToString(SqlReader3["День_недели"]),
+                        Convert.ToString(SqlReader3["Класс"])
+                        );
 
                     //listView5.Items.Add((SqlReader3["Id"]) + "          " + Convert.ToString(SqlReader3["Класс"]) + "          "
                     //    + Convert.ToString(SqlReader3["День_недели"]) + "          " + Convert.ToString(SqlReader3["Время_урока"]) 
@@ -692,8 +683,8 @@ namespace WindowsFormsApp1
         private async void button18_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox1.Text) &&
-    !string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox2.Text) &&
-    !string.IsNullOrEmpty(textBox3.Text) && !string.IsNullOrWhiteSpace(textBox3.Text))
+            !string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox2.Text) &&
+            !string.IsNullOrEmpty(textBox3.Text) && !string.IsNullOrWhiteSpace(textBox3.Text))
             {
                 SqlCommand command = new SqlCommand("INSERT INTO [Питание] (Id_Ученик, Номер, Сумма) VALUES(@Id_Ученик, @Номер, @Сумма)", sqlConnection);
                 command.Parameters.AddWithValue("Id_Ученик", textBox1.Text);
@@ -796,8 +787,8 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Поле 'Предмет' должно быть заполнено!");
             }
-        }
-
+        }       
+        
         private async void button19_Click_1(object sender, EventArgs e)
         {
             //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
@@ -824,6 +815,10 @@ namespace WindowsFormsApp1
             }
         }
 
+        private async void НайтиУченика_Click(object sender, EventArgs e) //сортировка для учеников
+        {
+
+        }
 
     }
 }

@@ -37,14 +37,15 @@
             this.обновлениеРасписанияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.обновлениеПитанияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.обновитьИнформациюОбУченикеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Оценки = new System.Windows.Forms.TabControl();
+            this.УчительПанель = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
-            this.Оценки.SuspendLayout();
+            this.УчительПанель.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -56,7 +57,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1030, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -116,19 +117,20 @@
             this.обновитьИнформациюОбУченикеToolStripMenuItem.Size = new System.Drawing.Size(342, 26);
             this.обновитьИнформациюОбУченикеToolStripMenuItem.Text = "Обновить информацию об ученике";
             // 
-            // Оценки
+            // УчительПанель
             // 
-            this.Оценки.Controls.Add(this.tabPage1);
-            this.Оценки.Controls.Add(this.tabPage2);
-            this.Оценки.Controls.Add(this.tabPage7);
-            this.Оценки.Controls.Add(this.tabPage5);
-            this.Оценки.Controls.Add(this.tabPage10);
-            this.Оценки.Location = new System.Drawing.Point(12, 31);
-            this.Оценки.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Оценки.Name = "Оценки";
-            this.Оценки.SelectedIndex = 0;
-            this.Оценки.Size = new System.Drawing.Size(775, 414);
-            this.Оценки.TabIndex = 2;
+            this.УчительПанель.Controls.Add(this.tabPage1);
+            this.УчительПанель.Controls.Add(this.tabPage2);
+            this.УчительПанель.Controls.Add(this.tabPage7);
+            this.УчительПанель.Controls.Add(this.tabPage5);
+            this.УчительПанель.Controls.Add(this.tabPage10);
+            this.УчительПанель.Controls.Add(this.tabPage3);
+            this.УчительПанель.Location = new System.Drawing.Point(12, 31);
+            this.УчительПанель.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.УчительПанель.Name = "УчительПанель";
+            this.УчительПанель.SelectedIndex = 0;
+            this.УчительПанель.Size = new System.Drawing.Size(996, 414);
+            this.УчительПанель.TabIndex = 2;
             // 
             // tabPage1
             // 
@@ -137,7 +139,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(767, 385);
+            this.tabPage1.Size = new System.Drawing.Size(988, 385);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Информация об учителе";
             // 
@@ -147,7 +149,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(767, 385);
+            this.tabPage2.Size = new System.Drawing.Size(988, 385);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Расписание";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -158,7 +160,7 @@
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage7.Size = new System.Drawing.Size(767, 385);
+            this.tabPage7.Size = new System.Drawing.Size(988, 385);
             this.tabPage7.TabIndex = 7;
             this.tabPage7.Text = "Выставление оценок";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -168,7 +170,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(767, 385);
+            this.tabPage5.Size = new System.Drawing.Size(988, 385);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Достижения/Повышение квалификации";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -178,24 +180,34 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(767, 385);
+            this.tabPage10.Size = new System.Drawing.Size(988, 385);
             this.tabPage10.TabIndex = 10;
             this.tabPage10.Text = "Расписание олимпиад";
             this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(988, 385);
+            this.tabPage3.TabIndex = 11;
+            this.tabPage3.Text = "Список учеников";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // Учитель
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 455);
-            this.Controls.Add(this.Оценки);
+            this.ClientSize = new System.Drawing.Size(1030, 490);
+            this.Controls.Add(this.УчительПанель);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Учитель";
             this.Text = "Учитель";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.Оценки.ResumeLayout(false);
+            this.УчительПанель.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,11 +224,12 @@
         private System.Windows.Forms.ToolStripMenuItem обновлениеРасписанияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem обновлениеПитанияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem обновитьИнформациюОбУченикеToolStripMenuItem;
-        private System.Windows.Forms.TabControl Оценки;
+        private System.Windows.Forms.TabControl УчительПанель;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
