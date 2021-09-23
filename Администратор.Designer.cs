@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Id", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Фамилия", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Имя", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup11 = new System.Windows.Forms.ListViewGroup("Id", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup12 = new System.Windows.Forms.ListViewGroup("Фамилия", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Имя", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Администратор));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +53,6 @@
             this.ФИО_учителя = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ДеньНедели = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Н_класса = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listView4 = new System.Windows.Forms.ListView();
             this.ОтменаСортировкиРасписание = new System.Windows.Forms.Button();
             this.НайтиКласс = new System.Windows.Forms.Button();
             this.КлассыСписок = new System.Windows.Forms.ComboBox();
@@ -92,10 +91,14 @@
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.УченикиСписок = new System.Windows.Forms.DataGridView();
+            this.IDУченика = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Фамилия_ученик = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Имя_ученика = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Отчество_ученика = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Класс_ученика = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ОтменитьСортировку = new System.Windows.Forms.Button();
-            this.Найти = new System.Windows.Forms.Button();
+            this.НайтиУченика = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -135,7 +138,6 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listView5 = new System.Windows.Forms.ListView();
             this.ОтменаСортировкиСоставление = new System.Windows.Forms.Button();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.button11 = new System.Windows.Forms.Button();
@@ -194,6 +196,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.РасписаниеЗанятий)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.УченикиСписок)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -218,7 +221,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1363, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1363, 30);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -254,7 +257,7 @@
             this.базуПриСоставленииРасписанияToolStripMenuItem,
             this.питаниеToolStripMenuItem});
             this.обновитьToolStripMenuItem.Name = "обновитьToolStripMenuItem";
-            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.обновитьToolStripMenuItem.Text = "Обновить";
             // 
             // базаДанныхУчениковToolStripMenuItem1
@@ -296,7 +299,6 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Linen;
             this.tabPage2.Controls.Add(this.РасписаниеЗанятий);
-            this.tabPage2.Controls.Add(this.listView4);
             this.tabPage2.Controls.Add(this.ОтменаСортировкиРасписание);
             this.tabPage2.Controls.Add(this.НайтиКласс);
             this.tabPage2.Controls.Add(this.КлассыСписок);
@@ -320,11 +322,11 @@
             this.ФИО_учителя,
             this.ДеньНедели,
             this.Н_класса});
-            this.РасписаниеЗанятий.Location = new System.Drawing.Point(726, 69);
+            this.РасписаниеЗанятий.Location = new System.Drawing.Point(15, 69);
             this.РасписаниеЗанятий.Name = "РасписаниеЗанятий";
             this.РасписаниеЗанятий.RowHeadersWidth = 51;
             this.РасписаниеЗанятий.RowTemplate.Height = 24;
-            this.РасписаниеЗанятий.Size = new System.Drawing.Size(598, 453);
+            this.РасписаниеЗанятий.Size = new System.Drawing.Size(832, 453);
             this.РасписаниеЗанятий.TabIndex = 110;
             // 
             // Кабинет
@@ -369,17 +371,6 @@
             this.Н_класса.Name = "Н_класса";
             this.Н_класса.Width = 125;
             // 
-            // listView4
-            // 
-            this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(15, 69);
-            this.listView4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(705, 499);
-            this.listView4.TabIndex = 109;
-            this.listView4.UseCompatibleStateImageBehavior = false;
-            this.listView4.View = System.Windows.Forms.View.SmallIcon;
-            // 
             // ОтменаСортировкиРасписание
             // 
             this.ОтменаСортировкиРасписание.BackColor = System.Drawing.SystemColors.Window;
@@ -419,10 +410,10 @@
             "6",
             "7",
             "8"});
-            this.КлассыСписок.Location = new System.Drawing.Point(212, 18);
+            this.КлассыСписок.Location = new System.Drawing.Point(168, 19);
             this.КлассыСписок.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.КлассыСписок.Name = "КлассыСписок";
-            this.КлассыСписок.Size = new System.Drawing.Size(85, 24);
+            this.КлассыСписок.Size = new System.Drawing.Size(140, 24);
             this.КлассыСписок.TabIndex = 35;
             // 
             // label1
@@ -432,9 +423,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(11, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 22);
+            this.label1.Size = new System.Drawing.Size(142, 22);
             this.label1.TabIndex = 34;
-            this.label1.Text = "Выбретите класс";
+            this.label1.Text = "Выбрать класс";
             // 
             // label12
             // 
@@ -844,17 +835,17 @@
             this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label34.Location = new System.Drawing.Point(15, 14);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(181, 22);
+            this.label34.Size = new System.Drawing.Size(163, 22);
             this.label34.TabIndex = 50;
-            this.label34.Text = "Выбретите предмет";
+            this.label34.Text = "Выбрать предмет";
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.Linen;
             this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage4.Controls.Add(this.listView2);
+            this.tabPage4.Controls.Add(this.УченикиСписок);
             this.tabPage4.Controls.Add(this.ОтменитьСортировку);
-            this.tabPage4.Controls.Add(this.Найти);
+            this.tabPage4.Controls.Add(this.НайтиУченика);
             this.tabPage4.Controls.Add(this.comboBox3);
             this.tabPage4.Controls.Add(this.comboBox5);
             this.tabPage4.Controls.Add(this.comboBox4);
@@ -890,22 +881,56 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Список учеников";
             // 
-            // listView2
+            // УченикиСписок
             // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(11, 59);
-            this.listView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(649, 477);
-            this.listView2.TabIndex = 81;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.SmallIcon;
+            this.УченикиСписок.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.УченикиСписок.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDУченика,
+            this.Фамилия_ученик,
+            this.Имя_ученика,
+            this.Отчество_ученика,
+            this.Класс_ученика});
+            this.УченикиСписок.Location = new System.Drawing.Point(7, 48);
+            this.УченикиСписок.Name = "УченикиСписок";
+            this.УченикиСписок.RowHeadersWidth = 51;
+            this.УченикиСписок.RowTemplate.Height = 24;
+            this.УченикиСписок.Size = new System.Drawing.Size(683, 471);
+            this.УченикиСписок.TabIndex = 111;
             // 
-            // columnHeader1
+            // IDУченика
             // 
-            this.columnHeader1.Text = "Id_Ученика";
+            this.IDУченика.HeaderText = "ID";
+            this.IDУченика.MinimumWidth = 6;
+            this.IDУченика.Name = "IDУченика";
+            this.IDУченика.Width = 125;
+            // 
+            // Фамилия_ученик
+            // 
+            this.Фамилия_ученик.HeaderText = "Фамилия";
+            this.Фамилия_ученик.MinimumWidth = 6;
+            this.Фамилия_ученик.Name = "Фамилия_ученик";
+            this.Фамилия_ученик.Width = 125;
+            // 
+            // Имя_ученика
+            // 
+            this.Имя_ученика.HeaderText = "Имя";
+            this.Имя_ученика.MinimumWidth = 6;
+            this.Имя_ученика.Name = "Имя_ученика";
+            this.Имя_ученика.Width = 125;
+            // 
+            // Отчество_ученика
+            // 
+            this.Отчество_ученика.HeaderText = "Отчество";
+            this.Отчество_ученика.MinimumWidth = 6;
+            this.Отчество_ученика.Name = "Отчество_ученика";
+            this.Отчество_ученика.Width = 125;
+            // 
+            // Класс_ученика
+            // 
+            this.Класс_ученика.HeaderText = "Номер класса";
+            this.Класс_ученика.MinimumWidth = 6;
+            this.Класс_ученика.Name = "Класс_ученика";
+            this.Класс_ученика.Width = 125;
             // 
             // ОтменитьСортировку
             // 
@@ -919,19 +944,20 @@
             this.ОтменитьСортировку.TabIndex = 80;
             this.ОтменитьСортировку.Text = "Отменить сортировку";
             this.ОтменитьСортировку.UseVisualStyleBackColor = false;
-            this.ОтменитьСортировку.Click += new System.EventHandler(this.ОтменитьСортировку_Click);
+            this.ОтменитьСортировку.Click += new System.EventHandler(this.ОтменаСортировкиРасписание_Click);
             // 
-            // Найти
+            // НайтиУченика
             // 
-            this.Найти.BackColor = System.Drawing.SystemColors.Window;
-            this.Найти.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Найти.Location = new System.Drawing.Point(293, 9);
-            this.Найти.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Найти.Name = "Найти";
-            this.Найти.Size = new System.Drawing.Size(97, 34);
-            this.Найти.TabIndex = 79;
-            this.Найти.Text = "Найти";
-            this.Найти.UseVisualStyleBackColor = false;
+            this.НайтиУченика.BackColor = System.Drawing.SystemColors.Window;
+            this.НайтиУченика.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.НайтиУченика.Location = new System.Drawing.Point(293, 9);
+            this.НайтиУченика.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.НайтиУченика.Name = "НайтиУченика";
+            this.НайтиУченика.Size = new System.Drawing.Size(97, 34);
+            this.НайтиУченика.TabIndex = 79;
+            this.НайтиУченика.Text = "Найти";
+            this.НайтиУченика.UseVisualStyleBackColor = false;
+            this.НайтиУченика.Click += new System.EventHandler(this.НайтиУченика_Click);
             // 
             // comboBox3
             // 
@@ -1239,9 +1265,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(8, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 22);
+            this.label9.Size = new System.Drawing.Size(142, 22);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Выбретите класс";
+            this.label9.Text = "Выбрать класс";
             // 
             // ученикBindingSource
             // 
@@ -1268,12 +1294,12 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1363, 606);
             this.tabControl1.TabIndex = 2;
+            this.tabControl1.Click += new System.EventHandler(this.ОтменаСортировкиРасписание_Click);
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Linen;
             this.tabPage3.Controls.Add(this.СоставлениеРасписания);
-            this.tabPage3.Controls.Add(this.listView5);
             this.tabPage3.Controls.Add(this.ОтменаСортировкиСоставление);
             this.tabPage3.Controls.Add(this.comboBox12);
             this.tabPage3.Controls.Add(this.button11);
@@ -1310,11 +1336,11 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.СоставлениеРасписания.Location = new System.Drawing.Point(464, 116);
+            this.СоставлениеРасписания.Location = new System.Drawing.Point(27, 116);
             this.СоставлениеРасписания.Name = "СоставлениеРасписания";
             this.СоставлениеРасписания.RowHeadersWidth = 51;
             this.СоставлениеРасписания.RowTemplate.Height = 24;
-            this.СоставлениеРасписания.Size = new System.Drawing.Size(418, 453);
+            this.СоставлениеРасписания.Size = new System.Drawing.Size(855, 453);
             this.СоставлениеРасписания.TabIndex = 111;
             // 
             // dataGridViewTextBoxColumn1
@@ -1358,17 +1384,6 @@
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // listView5
-            // 
-            this.listView5.HideSelection = false;
-            this.listView5.Location = new System.Drawing.Point(37, 119);
-            this.listView5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView5.Name = "listView5";
-            this.listView5.Size = new System.Drawing.Size(421, 431);
-            this.listView5.TabIndex = 110;
-            this.listView5.UseCompatibleStateImageBehavior = false;
-            this.listView5.View = System.Windows.Forms.View.SmallIcon;
             // 
             // ОтменаСортировкиСоставление
             // 
@@ -1721,22 +1736,22 @@
             this.Класс,
             this.Номер_документа,
             this.Сумма});
-            listViewGroup6.Header = "Id";
-            listViewGroup6.Name = "listViewGroup1";
-            listViewGroup7.Header = "Фамилия";
-            listViewGroup7.Name = "listViewGroup2";
-            listViewGroup8.Header = "Имя";
-            listViewGroup8.Name = "listViewGroup3";
-            listViewGroup9.Header = "ListViewGroup";
-            listViewGroup9.Name = "listViewGroup4";
-            listViewGroup10.Header = "ListViewGroup";
-            listViewGroup10.Name = "listViewGroup5";
+            listViewGroup11.Header = "Id";
+            listViewGroup11.Name = "listViewGroup1";
+            listViewGroup12.Header = "Фамилия";
+            listViewGroup12.Name = "listViewGroup2";
+            listViewGroup13.Header = "Имя";
+            listViewGroup13.Name = "listViewGroup3";
+            listViewGroup14.Header = "ListViewGroup";
+            listViewGroup14.Name = "listViewGroup4";
+            listViewGroup15.Header = "ListViewGroup";
+            listViewGroup15.Name = "listViewGroup5";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup6,
-            listViewGroup7,
-            listViewGroup8,
-            listViewGroup9,
-            listViewGroup10});
+            listViewGroup11,
+            listViewGroup12,
+            listViewGroup13,
+            listViewGroup14,
+            listViewGroup15});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(25, 66);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2050,6 +2065,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.УченикиСписок)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
             this.tabControl1.ResumeLayout(false);
@@ -2170,7 +2186,7 @@
         private System.Windows.Forms.BindingSource ученикBindingSource1;
         private Database1DataSet2TableAdapters.УченикTableAdapter ученикTableAdapter1;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button Найти;
+        private System.Windows.Forms.Button НайтиУченика;
         private System.Windows.Forms.Button ОтменитьСортировку;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button ОтменаСортировкиРасписание;
@@ -2205,11 +2221,7 @@
         private System.Windows.Forms.ColumnHeader Номер_документа;
         private System.Windows.Forms.ColumnHeader Сумма;
         private System.Windows.Forms.BindingSource database1DataSetBindingSource1;
-        private System.Windows.Forms.ListView listView4;
         private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ListView listView5;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.DataGridView РасписаниеЗанятий;
         private System.Windows.Forms.DataGridViewTextBoxColumn Кабинет;
         private System.Windows.Forms.DataGridViewTextBoxColumn Время;
@@ -2224,6 +2236,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridView УченикиСписок;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDУченика;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Фамилия_ученик;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Имя_ученика;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Отчество_ученика;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Класс_ученика;
     }
 }
 

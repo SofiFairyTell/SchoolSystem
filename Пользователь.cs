@@ -35,14 +35,6 @@ namespace WindowsFormsApp1
             th.Start();
         }
 
-        private void button2_Click(object sender, EventArgs e) //Вход в систему учитель
-        {
-            this.Close();
-            th1 = new Thread(open2);
-            th1.SetApartmentState(ApartmentState.STA);
-            th1.Start();
-        }
-
         private void button3_Click(object sender, EventArgs e) //Вход в систему админ
         {
             this.Close();
@@ -51,5 +43,12 @@ namespace WindowsFormsApp1
             th2.Start();
         }
 
+        private void Учитель_Click(object sender, EventArgs e)//Вход в систему учитель
+        {
+            this.Close();
+            th2 = new Thread(open2);
+            th2.SetApartmentState(ApartmentState.STA);
+            th2.Start();
+        }
     }
 }
