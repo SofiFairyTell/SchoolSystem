@@ -81,7 +81,6 @@ namespace WindowsFormsApp1
                     SqlReader3.Close();
             }
 
-
         }
 
         private async void НайтиУченика_Click(object sender, EventArgs e)

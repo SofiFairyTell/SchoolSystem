@@ -42,55 +42,57 @@
             this.обновитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.базаДанныхУчениковToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.базаДанныхПреподавателейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.расписаниеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.базуПриСоставленииРасписанияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.питаниеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.РасписаниеЗанятий = new System.Windows.Forms.DataGridView();
-            this.Кабинет = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Время = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Предмет = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ФИО_учителя = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ДеньНедели = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Н_класса = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ОтменаСортировкиРасписание = new System.Windows.Forms.Button();
-            this.НайтиКласс = new System.Windows.Forms.Button();
-            this.КлассыСписок = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.button13 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.добавитьДанныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.преподавательДобавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ученикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.расписаниеToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.редактироватьДанныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.преподавательToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ученикToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьДанныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.преподавательУдалитьToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ученикToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.вклУчителя = new System.Windows.Forms.TabPage();
+            this.грУдалить = new System.Windows.Forms.GroupBox();
+            this.УдалитьДанные = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.грДобавить = new System.Windows.Forms.GroupBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.ДобавитьПреподавателя = new System.Windows.Forms.Button();
+            this.грРедактировать = new System.Windows.Forms.GroupBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.ИзменитьДаные = new System.Windows.Forms.Button();
+            this.ИнформационноеСообщение = new System.Windows.Forms.Label();
+            this.СписокПреподавателей = new System.Windows.Forms.DataGridView();
+            this.Учитель_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Учитель_Фамилия = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Учитель_Имя = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Учитель_Отчество = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Учитель_Предмет = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ОтменаСортировки = new System.Windows.Forms.Button();
+            this.НайтиУчителя = new System.Windows.Forms.Button();
+            this.СписокПредметов = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.вклУченики = new System.Windows.Forms.TabPage();
             this.УченикиСписок = new System.Windows.Forms.DataGridView();
             this.IDУченика = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Фамилия_ученик = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,7 +101,7 @@
             this.Класс_ученика = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ОтменитьСортировку = new System.Windows.Forms.Button();
             this.НайтиУченика = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.ВыборКласса = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -130,7 +132,7 @@
             this.ученикBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet1 = new WindowsFormsApp1.Database1DataSet1();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.вклРасписание = new System.Windows.Forms.TabPage();
             this.СоставлениеРасписания = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -141,7 +143,7 @@
             this.ОтменаСортировкиСоставление = new System.Windows.Forms.Button();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.button11 = new System.Windows.Forms.Button();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.КлассыСписок = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
             this.ДобавитьРасписание = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
@@ -156,7 +158,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.вклПитание = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
             this.Id_Ученика = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Фамилия = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -192,17 +194,19 @@
             this.ученикTableAdapter1 = new WindowsFormsApp1.Database1DataSet2TableAdapters.УченикTableAdapter();
             this.database1DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.РасписаниеЗанятий)).BeginInit();
-            this.tabPage1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.вклУчителя.SuspendLayout();
+            this.грУдалить.SuspendLayout();
+            this.грДобавить.SuspendLayout();
+            this.грРедактировать.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.СписокПреподавателей)).BeginInit();
+            this.вклУченики.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.УченикиСписок)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.вклРасписание.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.СоставлениеРасписания)).BeginInit();
-            this.tabPage5.SuspendLayout();
+            this.вклПитание.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
@@ -221,7 +225,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1363, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1499, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -243,7 +247,10 @@
             // помощьToolStripMenuItem
             // 
             this.помощьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.обновитьToolStripMenuItem});
+            this.обновитьToolStripMenuItem,
+            this.добавитьДанныеToolStripMenuItem,
+            this.редактироватьДанныеToolStripMenuItem,
+            this.удалитьДанныеToolStripMenuItem});
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
             this.помощьToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.помощьToolStripMenuItem.Text = "Инструменты";
@@ -253,11 +260,10 @@
             this.обновитьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.базаДанныхУчениковToolStripMenuItem1,
             this.базаДанныхПреподавателейToolStripMenuItem,
-            this.расписаниеToolStripMenuItem,
             this.базуПриСоставленииРасписанияToolStripMenuItem,
             this.питаниеToolStripMenuItem});
             this.обновитьToolStripMenuItem.Name = "обновитьToolStripMenuItem";
-            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
             this.обновитьToolStripMenuItem.Text = "Обновить";
             // 
             // базаДанныхУчениковToolStripMenuItem1
@@ -274,13 +280,6 @@
             this.базаДанныхПреподавателейToolStripMenuItem.Text = "База данных преподавателей";
             this.базаДанныхПреподавателейToolStripMenuItem.Click += new System.EventHandler(this.БазаДанныхПреподавателейToolStripMenuItem_Click);
             // 
-            // расписаниеToolStripMenuItem
-            // 
-            this.расписаниеToolStripMenuItem.Name = "расписаниеToolStripMenuItem";
-            this.расписаниеToolStripMenuItem.Size = new System.Drawing.Size(333, 26);
-            this.расписаниеToolStripMenuItem.Text = "Расписание";
-            this.расписаниеToolStripMenuItem.Click += new System.EventHandler(this.расписаниеToolStripMenuItem_Click);
-            // 
             // базуПриСоставленииРасписанияToolStripMenuItem
             // 
             this.базуПриСоставленииРасписанияToolStripMenuItem.Name = "базуПриСоставленииРасписанияToolStripMenuItem";
@@ -295,231 +294,205 @@
             this.питаниеToolStripMenuItem.Text = "Питание";
             this.питаниеToolStripMenuItem.Click += new System.EventHandler(this.питаниеToolStripMenuItem_Click);
             // 
-            // tabPage2
+            // добавитьДанныеToolStripMenuItem
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Linen;
-            this.tabPage2.Controls.Add(this.РасписаниеЗанятий);
-            this.tabPage2.Controls.Add(this.ОтменаСортировкиРасписание);
-            this.tabPage2.Controls.Add(this.НайтиКласс);
-            this.tabPage2.Controls.Add(this.КлассыСписок);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1355, 577);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Расписание";
+            this.добавитьДанныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.преподавательДобавитьToolStripMenuItem,
+            this.ученикToolStripMenuItem,
+            this.расписаниеToolStripMenuItem1});
+            this.добавитьДанныеToolStripMenuItem.Name = "добавитьДанныеToolStripMenuItem";
+            this.добавитьДанныеToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.добавитьДанныеToolStripMenuItem.Text = "Добавить данные";
             // 
-            // РасписаниеЗанятий
+            // преподавательДобавитьToolStripMenuItem
             // 
-            this.РасписаниеЗанятий.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.РасписаниеЗанятий.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Кабинет,
-            this.Время,
-            this.Предмет,
-            this.ФИО_учителя,
-            this.ДеньНедели,
-            this.Н_класса});
-            this.РасписаниеЗанятий.Location = new System.Drawing.Point(15, 69);
-            this.РасписаниеЗанятий.Name = "РасписаниеЗанятий";
-            this.РасписаниеЗанятий.RowHeadersWidth = 51;
-            this.РасписаниеЗанятий.RowTemplate.Height = 24;
-            this.РасписаниеЗанятий.Size = new System.Drawing.Size(832, 453);
-            this.РасписаниеЗанятий.TabIndex = 110;
+            this.преподавательДобавитьToolStripMenuItem.Name = "преподавательДобавитьToolStripMenuItem";
+            this.преподавательДобавитьToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.преподавательДобавитьToolStripMenuItem.Text = "Преподаватель";
+            this.преподавательДобавитьToolStripMenuItem.Click += new System.EventHandler(this.преподавательДобавитьToolStripMenuItem_Click);
             // 
-            // Кабинет
+            // ученикToolStripMenuItem
             // 
-            this.Кабинет.HeaderText = "Кабинет";
-            this.Кабинет.MinimumWidth = 6;
-            this.Кабинет.Name = "Кабинет";
-            this.Кабинет.Width = 125;
+            this.ученикToolStripMenuItem.Name = "ученикToolStripMenuItem";
+            this.ученикToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.ученикToolStripMenuItem.Text = "Ученик";
             // 
-            // Время
+            // расписаниеToolStripMenuItem1
             // 
-            this.Время.HeaderText = "Время";
-            this.Время.MinimumWidth = 6;
-            this.Время.Name = "Время";
-            this.Время.Width = 125;
+            this.расписаниеToolStripMenuItem1.Name = "расписаниеToolStripMenuItem1";
+            this.расписаниеToolStripMenuItem1.Size = new System.Drawing.Size(200, 26);
+            this.расписаниеToolStripMenuItem1.Text = "Расписание";
             // 
-            // Предмет
+            // редактироватьДанныеToolStripMenuItem
             // 
-            this.Предмет.HeaderText = "Предмет";
-            this.Предмет.MinimumWidth = 6;
-            this.Предмет.Name = "Предмет";
-            this.Предмет.Width = 125;
+            this.редактироватьДанныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.преподавательToolStripMenuItem1,
+            this.ученикToolStripMenuItem1});
+            this.редактироватьДанныеToolStripMenuItem.Name = "редактироватьДанныеToolStripMenuItem";
+            this.редактироватьДанныеToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.редактироватьДанныеToolStripMenuItem.Text = "Редактировать данные";
             // 
-            // ФИО_учителя
+            // преподавательToolStripMenuItem1
             // 
-            this.ФИО_учителя.HeaderText = "Учитель";
-            this.ФИО_учителя.MinimumWidth = 6;
-            this.ФИО_учителя.Name = "ФИО_учителя";
-            this.ФИО_учителя.Width = 125;
+            this.преподавательToolStripMenuItem1.Name = "преподавательToolStripMenuItem1";
+            this.преподавательToolStripMenuItem1.Size = new System.Drawing.Size(200, 26);
+            this.преподавательToolStripMenuItem1.Text = "Преподаватель";
+            this.преподавательToolStripMenuItem1.Click += new System.EventHandler(this.преподавательРедактироваToolStripMenuItem1_Click);
             // 
-            // ДеньНедели
+            // ученикToolStripMenuItem1
             // 
-            this.ДеньНедели.HeaderText = "День недели";
-            this.ДеньНедели.MinimumWidth = 6;
-            this.ДеньНедели.Name = "ДеньНедели";
-            this.ДеньНедели.Width = 125;
+            this.ученикToolStripMenuItem1.Name = "ученикToolStripMenuItem1";
+            this.ученикToolStripMenuItem1.Size = new System.Drawing.Size(200, 26);
+            this.ученикToolStripMenuItem1.Text = "Ученик";
             // 
-            // Н_класса
+            // удалитьДанныеToolStripMenuItem
             // 
-            this.Н_класса.HeaderText = "Номер класса";
-            this.Н_класса.MinimumWidth = 6;
-            this.Н_класса.Name = "Н_класса";
-            this.Н_класса.Width = 125;
+            this.удалитьДанныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.преподавательУдалитьToolStripMenuItem2,
+            this.ученикToolStripMenuItem2});
+            this.удалитьДанныеToolStripMenuItem.Name = "удалитьДанныеToolStripMenuItem";
+            this.удалитьДанныеToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.удалитьДанныеToolStripMenuItem.Text = "Удалить данные";
             // 
-            // ОтменаСортировкиРасписание
+            // преподавательУдалитьToolStripMenuItem2
             // 
-            this.ОтменаСортировкиРасписание.BackColor = System.Drawing.SystemColors.Window;
-            this.ОтменаСортировкиРасписание.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ОтменаСортировкиРасписание.Location = new System.Drawing.Point(459, 14);
-            this.ОтменаСортировкиРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ОтменаСортировкиРасписание.Name = "ОтменаСортировкиРасписание";
-            this.ОтменаСортировкиРасписание.Size = new System.Drawing.Size(300, 34);
-            this.ОтменаСортировкиРасписание.TabIndex = 108;
-            this.ОтменаСортировкиРасписание.Text = "Отменить сортировку";
-            this.ОтменаСортировкиРасписание.UseVisualStyleBackColor = false;
-            this.ОтменаСортировкиРасписание.Click += new System.EventHandler(this.ОтменаСортировкиРасписание_Click);
+            this.преподавательУдалитьToolStripMenuItem2.Name = "преподавательУдалитьToolStripMenuItem2";
+            this.преподавательУдалитьToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.преподавательУдалитьToolStripMenuItem2.Text = "Преподаватель";
+            this.преподавательУдалитьToolStripMenuItem2.Click += new System.EventHandler(this.преподавательУдалитьToolStripMenuItem2_Click);
             // 
-            // НайтиКласс
+            // ученикToolStripMenuItem2
             // 
-            this.НайтиКласс.BackColor = System.Drawing.SystemColors.Window;
-            this.НайтиКласс.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.НайтиКласс.Location = new System.Drawing.Point(329, 14);
-            this.НайтиКласс.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.НайтиКласс.Name = "НайтиКласс";
-            this.НайтиКласс.Size = new System.Drawing.Size(97, 34);
-            this.НайтиКласс.TabIndex = 36;
-            this.НайтиКласс.Text = "Найти";
-            this.НайтиКласс.UseVisualStyleBackColor = false;
-            this.НайтиКласс.Click += new System.EventHandler(this.НайтиРасписание_Click);
+            this.ученикToolStripMenuItem2.Name = "ученикToolStripMenuItem2";
+            this.ученикToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.ученикToolStripMenuItem2.Text = "Ученик";
             // 
-            // КлассыСписок
+            // вклУчителя
             // 
-            this.КлассыСписок.BackColor = System.Drawing.SystemColors.Window;
-            this.КлассыСписок.FormattingEnabled = true;
-            this.КлассыСписок.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.КлассыСписок.Location = new System.Drawing.Point(168, 19);
-            this.КлассыСписок.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.КлассыСписок.Name = "КлассыСписок";
-            this.КлассыСписок.Size = new System.Drawing.Size(140, 24);
-            this.КлассыСписок.TabIndex = 35;
+            this.вклУчителя.BackColor = System.Drawing.Color.Linen;
+            this.вклУчителя.Controls.Add(this.грУдалить);
+            this.вклУчителя.Controls.Add(this.грДобавить);
+            this.вклУчителя.Controls.Add(this.грРедактировать);
+            this.вклУчителя.Controls.Add(this.ИнформационноеСообщение);
+            this.вклУчителя.Controls.Add(this.СписокПреподавателей);
+            this.вклУчителя.Controls.Add(this.ОтменаСортировки);
+            this.вклУчителя.Controls.Add(this.НайтиУчителя);
+            this.вклУчителя.Controls.Add(this.СписокПредметов);
+            this.вклУчителя.Controls.Add(this.label34);
+            this.вклУчителя.Location = new System.Drawing.Point(4, 25);
+            this.вклУчителя.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.вклУчителя.Name = "вклУчителя";
+            this.вклУчителя.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.вклУчителя.Size = new System.Drawing.Size(1491, 577);
+            this.вклУчителя.TabIndex = 0;
+            this.вклУчителя.Text = "Список преподавателей";
             // 
-            // label1
+            // грУдалить
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(11, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 22);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Выбрать класс";
+            this.грУдалить.BackColor = System.Drawing.Color.Tomato;
+            this.грУдалить.Controls.Add(this.УдалитьДанные);
+            this.грУдалить.Controls.Add(this.label6);
+            this.грУдалить.Controls.Add(this.textBox6);
+            this.грУдалить.Location = new System.Drawing.Point(862, 345);
+            this.грУдалить.Name = "грУдалить";
+            this.грУдалить.Size = new System.Drawing.Size(491, 136);
+            this.грУдалить.TabIndex = 114;
+            this.грУдалить.TabStop = false;
+            this.грУдалить.Text = "Удаление данных";
+            this.грУдалить.Visible = false;
             // 
-            // label12
+            // УдалитьДанные
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 293);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(12, 17);
-            this.label12.TabIndex = 19;
-            this.label12.Text = " ";
+            this.УдалитьДанные.BackColor = System.Drawing.SystemColors.Window;
+            this.УдалитьДанные.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.УдалитьДанные.Location = new System.Drawing.Point(361, 60);
+            this.УдалитьДанные.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.УдалитьДанные.Name = "УдалитьДанные";
+            this.УдалитьДанные.Size = new System.Drawing.Size(122, 50);
+            this.УдалитьДанные.TabIndex = 104;
+            this.УдалитьДанные.Text = "Удалить";
+            this.УдалитьДанные.UseVisualStyleBackColor = false;
+            this.УдалитьДанные.Click += new System.EventHandler(this.УдалитьДанныеУчитель_Click);
             // 
-            // tabPage1
+            // label6
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Linen;
-            this.tabPage1.Controls.Add(this.listView3);
-            this.tabPage1.Controls.Add(this.button13);
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.comboBox6);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.textBox7);
-            this.tabPage1.Controls.Add(this.textBox8);
-            this.tabPage1.Controls.Add(this.textBox16);
-            this.tabPage1.Controls.Add(this.textBox17);
-            this.tabPage1.Controls.Add(this.textBox18);
-            this.tabPage1.Controls.Add(this.textBox19);
-            this.tabPage1.Controls.Add(this.textBox20);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.button7);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label26);
-            this.tabPage1.Controls.Add(this.label27);
-            this.tabPage1.Controls.Add(this.label28);
-            this.tabPage1.Controls.Add(this.label29);
-            this.tabPage1.Controls.Add(this.button9);
-            this.tabPage1.Controls.Add(this.label30);
-            this.tabPage1.Controls.Add(this.label31);
-            this.tabPage1.Controls.Add(this.label32);
-            this.tabPage1.Controls.Add(this.label33);
-            this.tabPage1.Controls.Add(this.button8);
-            this.tabPage1.Controls.Add(this.comboBox7);
-            this.tabPage1.Controls.Add(this.label34);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1355, 577);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Список преподавателей";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(35, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 22);
+            this.label6.TabIndex = 101;
+            this.label6.Text = "ID учителя";
             // 
-            // listView3
+            // textBox6
             // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(19, 52);
-            this.listView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(743, 459);
-            this.listView3.TabIndex = 108;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.SmallIcon;
+            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox6.Location = new System.Drawing.Point(171, 25);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(312, 22);
+            this.textBox6.TabIndex = 102;
             // 
-            // button13
+            // грДобавить
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.Window;
-            this.button13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button13.Location = new System.Drawing.Point(203, 517);
-            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(300, 34);
-            this.button13.TabIndex = 107;
-            this.button13.Text = "Отменить сортировку";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.грДобавить.BackColor = System.Drawing.Color.PaleGreen;
+            this.грДобавить.Controls.Add(this.label33);
+            this.грДобавить.Controls.Add(this.textBox20);
+            this.грДобавить.Controls.Add(this.label32);
+            this.грДобавить.Controls.Add(this.textBox19);
+            this.грДобавить.Controls.Add(this.comboBox6);
+            this.грДобавить.Controls.Add(this.label31);
+            this.грДобавить.Controls.Add(this.textBox18);
+            this.грДобавить.Controls.Add(this.label30);
+            this.грДобавить.Controls.Add(this.ДобавитьПреподавателя);
+            this.грДобавить.Location = new System.Drawing.Point(862, 36);
+            this.грДобавить.Name = "грДобавить";
+            this.грДобавить.Size = new System.Drawing.Size(491, 262);
+            this.грДобавить.TabIndex = 109;
+            this.грДобавить.TabStop = false;
+            this.грДобавить.Text = "Добавление данных";
+            this.грДобавить.Visible = false;
             // 
-            // comboBox1
+            // label33
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Русский язык",
-            "Математика",
-            "Окружающий мир",
-            "Литературное чтение",
-            "Алгебра",
-            "Геометрия",
-            "Обществознание",
-            "Английский язык"});
-            this.comboBox1.Location = new System.Drawing.Point(925, 417);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(320, 24);
-            this.comboBox1.TabIndex = 106;
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label33.Location = new System.Drawing.Point(13, 37);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(89, 22);
+            this.label33.TabIndex = 79;
+            this.label33.Text = "Фамилия";
+            // 
+            // textBox20
+            // 
+            this.textBox20.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox20.Location = new System.Drawing.Point(151, 37);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(320, 22);
+            this.textBox20.TabIndex = 84;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label32.Location = new System.Drawing.Point(13, 79);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(46, 22);
+            this.label32.TabIndex = 80;
+            this.label32.Text = "Имя";
+            // 
+            // textBox19
+            // 
+            this.textBox19.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox19.Location = new System.Drawing.Point(151, 80);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(320, 22);
+            this.textBox19.TabIndex = 85;
             // 
             // comboBox6
             // 
@@ -534,286 +507,136 @@
             "Геометрия",
             "Обществознание",
             "Английский язык"});
-            this.comboBox6.Location = new System.Drawing.Point(907, 176);
+            this.comboBox6.Location = new System.Drawing.Point(151, 168);
             this.comboBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(320, 24);
             this.comboBox6.TabIndex = 105;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(1259, 475);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 50);
-            this.button2.TabIndex = 104;
-            this.button2.Text = "Удалить";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(873, 466);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(204, 26);
-            this.label5.TabIndex = 103;
-            this.label5.Text = "Удаление данных";
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(925, 505);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(65, 22);
-            this.textBox6.TabIndex = 102;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox7.Location = new System.Drawing.Point(925, 254);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(65, 22);
-            this.textBox7.TabIndex = 98;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox8.Location = new System.Drawing.Point(925, 377);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(320, 22);
-            this.textBox8.TabIndex = 96;
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox16.Location = new System.Drawing.Point(925, 334);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(320, 22);
-            this.textBox16.TabIndex = 95;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox17.Location = new System.Drawing.Point(925, 294);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(320, 22);
-            this.textBox17.TabIndex = 94;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox18.Location = new System.Drawing.Point(907, 137);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(320, 22);
-            this.textBox18.TabIndex = 86;
-            // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox19.Location = new System.Drawing.Point(907, 94);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(320, 22);
-            this.textBox19.TabIndex = 85;
-            // 
-            // textBox20
-            // 
-            this.textBox20.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox20.Location = new System.Drawing.Point(907, 52);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(320, 22);
-            this.textBox20.TabIndex = 84;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(809, 505);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 22);
-            this.label6.TabIndex = 101;
-            this.label6.Text = "ID учителя";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(873, 217);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(278, 26);
-            this.label7.TabIndex = 100;
-            this.label7.Text = "Редактирование данных";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(809, 254);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 22);
-            this.label8.TabIndex = 97;
-            this.label8.Text = "ID учителя";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.Window;
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.Location = new System.Drawing.Point(1259, 293);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(231, 50);
-            this.button7.TabIndex = 93;
-            this.button7.Text = "Изменить";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.Button7_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(809, 418);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 22);
-            this.label11.TabIndex = 92;
-            this.label11.Text = "Предмет";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(809, 377);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(89, 22);
-            this.label26.TabIndex = 91;
-            this.label26.Text = "Отчество";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label27.Location = new System.Drawing.Point(809, 334);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(46, 22);
-            this.label27.TabIndex = 90;
-            this.label27.Text = "Имя";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label28.Location = new System.Drawing.Point(809, 293);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(89, 22);
-            this.label28.TabIndex = 89;
-            this.label28.Text = "Фамилия";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label29.Location = new System.Drawing.Point(893, 15);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(230, 26);
-            this.label29.TabIndex = 88;
-            this.label29.Text = "Добавление данных";
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.SystemColors.Window;
-            this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.Location = new System.Drawing.Point(1259, 79);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(231, 50);
-            this.button9.TabIndex = 83;
-            this.button9.Text = "Добавить";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.Button9_Click);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label30.Location = new System.Drawing.Point(803, 178);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(84, 22);
-            this.label30.TabIndex = 82;
-            this.label30.Text = "Предмет";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label31.Location = new System.Drawing.Point(803, 135);
+            this.label31.Location = new System.Drawing.Point(13, 120);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(89, 22);
             this.label31.TabIndex = 81;
             this.label31.Text = "Отчество";
             // 
-            // label32
+            // textBox18
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label32.Location = new System.Drawing.Point(803, 94);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(46, 22);
-            this.label32.TabIndex = 80;
-            this.label32.Text = "Имя";
+            this.textBox18.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox18.Location = new System.Drawing.Point(151, 121);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(320, 22);
+            this.textBox18.TabIndex = 86;
             // 
-            // label33
+            // label30
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label33.Location = new System.Drawing.Point(803, 52);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(89, 22);
-            this.label33.TabIndex = 79;
-            this.label33.Text = "Фамилия";
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label30.Location = new System.Drawing.Point(13, 167);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(84, 22);
+            this.label30.TabIndex = 82;
+            this.label30.Text = "Предмет";
             // 
-            // button8
+            // ДобавитьПреподавателя
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.Window;
-            this.button8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(565, 7);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(97, 34);
-            this.button8.TabIndex = 62;
-            this.button8.Text = "Найти";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.Button8_Click);
+            this.ДобавитьПреподавателя.BackColor = System.Drawing.SystemColors.Window;
+            this.ДобавитьПреподавателя.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ДобавитьПреподавателя.Location = new System.Drawing.Point(336, 212);
+            this.ДобавитьПреподавателя.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ДобавитьПреподавателя.Name = "ДобавитьПреподавателя";
+            this.ДобавитьПреподавателя.Size = new System.Drawing.Size(135, 37);
+            this.ДобавитьПреподавателя.TabIndex = 83;
+            this.ДобавитьПреподавателя.Text = "Добавить";
+            this.ДобавитьПреподавателя.UseVisualStyleBackColor = false;
+            this.ДобавитьПреподавателя.Click += new System.EventHandler(this.ДобавитьДанныеУчитель_Click);
             // 
-            // comboBox7
+            // грРедактировать
             // 
-            this.comboBox7.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.грРедактировать.BackColor = System.Drawing.Color.Khaki;
+            this.грРедактировать.Controls.Add(this.label26);
+            this.грРедактировать.Controls.Add(this.label28);
+            this.грРедактировать.Controls.Add(this.label27);
+            this.грРедактировать.Controls.Add(this.label11);
+            this.грРедактировать.Controls.Add(this.textBox7);
+            this.грРедактировать.Controls.Add(this.comboBox1);
+            this.грРедактировать.Controls.Add(this.textBox17);
+            this.грРедактировать.Controls.Add(this.label8);
+            this.грРедактировать.Controls.Add(this.textBox16);
+            this.грРедактировать.Controls.Add(this.textBox8);
+            this.грРедактировать.Controls.Add(this.ИзменитьДаные);
+            this.грРедактировать.Location = new System.Drawing.Point(862, 36);
+            this.грРедактировать.Name = "грРедактировать";
+            this.грРедактировать.Size = new System.Drawing.Size(491, 317);
+            this.грРедактировать.TabIndex = 110;
+            this.грРедактировать.TabStop = false;
+            this.грРедактировать.Text = "Редактирование данных";
+            this.грРедактировать.Visible = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label26.Location = new System.Drawing.Point(15, 172);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(89, 22);
+            this.label26.TabIndex = 91;
+            this.label26.Text = "Отчество";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label28.Location = new System.Drawing.Point(19, 76);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(89, 22);
+            this.label28.TabIndex = 89;
+            this.label28.Text = "Фамилия";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label27.Location = new System.Drawing.Point(19, 124);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(46, 22);
+            this.label27.TabIndex = 90;
+            this.label27.Text = "Имя";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(19, 216);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 22);
+            this.label11.TabIndex = 92;
+            this.label11.Text = "Предмет";
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox7.Location = new System.Drawing.Point(127, 42);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(65, 22);
+            this.textBox7.TabIndex = 98;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "Русский язык",
             "Математика",
             "Окружающий мир",
@@ -822,11 +645,170 @@
             "Геометрия",
             "Обществознание",
             "Английский язык"});
-            this.comboBox7.Location = new System.Drawing.Point(227, 12);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(296, 24);
-            this.comboBox7.TabIndex = 51;
+            this.comboBox1.Location = new System.Drawing.Point(131, 217);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(332, 24);
+            this.comboBox1.TabIndex = 106;
+            // 
+            // textBox17
+            // 
+            this.textBox17.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox17.Location = new System.Drawing.Point(131, 76);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(332, 22);
+            this.textBox17.TabIndex = 94;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(19, 42);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(102, 22);
+            this.label8.TabIndex = 97;
+            this.label8.Text = "ID учителя";
+            // 
+            // textBox16
+            // 
+            this.textBox16.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox16.Location = new System.Drawing.Point(131, 123);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(332, 22);
+            this.textBox16.TabIndex = 95;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox8.Location = new System.Drawing.Point(131, 172);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(332, 22);
+            this.textBox8.TabIndex = 96;
+            // 
+            // ИзменитьДаные
+            // 
+            this.ИзменитьДаные.BackColor = System.Drawing.SystemColors.Window;
+            this.ИзменитьДаные.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ИзменитьДаные.Location = new System.Drawing.Point(341, 254);
+            this.ИзменитьДаные.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ИзменитьДаные.Name = "ИзменитьДаные";
+            this.ИзменитьДаные.Size = new System.Drawing.Size(122, 50);
+            this.ИзменитьДаные.TabIndex = 93;
+            this.ИзменитьДаные.Text = "Изменить";
+            this.ИзменитьДаные.UseVisualStyleBackColor = false;
+            this.ИзменитьДаные.Click += new System.EventHandler(this.ИзменитьДанныеУчитель_Click);
+            // 
+            // ИнформационноеСообщение
+            // 
+            this.ИнформационноеСообщение.AutoSize = true;
+            this.ИнформационноеСообщение.BackColor = System.Drawing.SystemColors.Info;
+            this.ИнформационноеСообщение.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ИнформационноеСообщение.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ИнформационноеСообщение.Location = new System.Drawing.Point(853, 493);
+            this.ИнформационноеСообщение.Name = "ИнформационноеСообщение";
+            this.ИнформационноеСообщение.Size = new System.Drawing.Size(494, 60);
+            this.ИнформационноеСообщение.TabIndex = 113;
+            this.ИнформационноеСообщение.Text = "Выберите команду в меню Инструменты \r\nдля работы с данными об Учителях";
+            // 
+            // СписокПреподавателей
+            // 
+            this.СписокПреподавателей.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.СписокПреподавателей.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Учитель_ID,
+            this.Учитель_Фамилия,
+            this.Учитель_Имя,
+            this.Учитель_Отчество,
+            this.Учитель_Предмет});
+            this.СписокПреподавателей.Location = new System.Drawing.Point(19, 56);
+            this.СписокПреподавателей.Name = "СписокПреподавателей";
+            this.СписокПреподавателей.RowHeadersWidth = 51;
+            this.СписокПреподавателей.RowTemplate.Height = 24;
+            this.СписокПреподавателей.Size = new System.Drawing.Size(831, 498);
+            this.СписокПреподавателей.TabIndex = 112;
+            // 
+            // Учитель_ID
+            // 
+            this.Учитель_ID.HeaderText = "ID";
+            this.Учитель_ID.MinimumWidth = 6;
+            this.Учитель_ID.Name = "Учитель_ID";
+            this.Учитель_ID.Width = 50;
+            // 
+            // Учитель_Фамилия
+            // 
+            this.Учитель_Фамилия.HeaderText = "Фамилия";
+            this.Учитель_Фамилия.MinimumWidth = 6;
+            this.Учитель_Фамилия.Name = "Учитель_Фамилия";
+            this.Учитель_Фамилия.Width = 125;
+            // 
+            // Учитель_Имя
+            // 
+            this.Учитель_Имя.HeaderText = "Имя";
+            this.Учитель_Имя.MinimumWidth = 6;
+            this.Учитель_Имя.Name = "Учитель_Имя";
+            this.Учитель_Имя.Width = 125;
+            // 
+            // Учитель_Отчество
+            // 
+            this.Учитель_Отчество.HeaderText = "Отчество";
+            this.Учитель_Отчество.MinimumWidth = 6;
+            this.Учитель_Отчество.Name = "Учитель_Отчество";
+            this.Учитель_Отчество.Width = 125;
+            // 
+            // Учитель_Предмет
+            // 
+            this.Учитель_Предмет.HeaderText = "Предмет";
+            this.Учитель_Предмет.MinimumWidth = 6;
+            this.Учитель_Предмет.Name = "Учитель_Предмет";
+            this.Учитель_Предмет.Width = 125;
+            // 
+            // ОтменаСортировки
+            // 
+            this.ОтменаСортировки.BackColor = System.Drawing.SystemColors.Window;
+            this.ОтменаСортировки.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ОтменаСортировки.Location = new System.Drawing.Point(509, 7);
+            this.ОтменаСортировки.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ОтменаСортировки.Name = "ОтменаСортировки";
+            this.ОтменаСортировки.Size = new System.Drawing.Size(125, 34);
+            this.ОтменаСортировки.TabIndex = 107;
+            this.ОтменаСортировки.Text = "Отменить";
+            this.ОтменаСортировки.UseVisualStyleBackColor = false;
+            this.ОтменаСортировки.Click += new System.EventHandler(this.ОтменаСортировкиУчитель_Click);
+            // 
+            // НайтиУчителя
+            // 
+            this.НайтиУчителя.BackColor = System.Drawing.SystemColors.Window;
+            this.НайтиУчителя.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.НайтиУчителя.Location = new System.Drawing.Point(406, 7);
+            this.НайтиУчителя.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.НайтиУчителя.Name = "НайтиУчителя";
+            this.НайтиУчителя.Size = new System.Drawing.Size(97, 34);
+            this.НайтиУчителя.TabIndex = 62;
+            this.НайтиУчителя.Text = "Найти";
+            this.НайтиУчителя.UseVisualStyleBackColor = false;
+            this.НайтиУчителя.Click += new System.EventHandler(this.НайтиУчителя_Click);
+            // 
+            // СписокПредметов
+            // 
+            this.СписокПредметов.BackColor = System.Drawing.SystemColors.Window;
+            this.СписокПредметов.FormattingEnabled = true;
+            this.СписокПредметов.Items.AddRange(new object[] {
+            "Русский язык",
+            "Математика",
+            "Окружающий мир",
+            "Литературное чтение",
+            "Алгебра",
+            "Геометрия",
+            "Обществознание",
+            "Английский язык"});
+            this.СписокПредметов.Location = new System.Drawing.Point(184, 14);
+            this.СписокПредметов.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.СписокПредметов.Name = "СписокПредметов";
+            this.СписокПредметов.Size = new System.Drawing.Size(210, 24);
+            this.СписокПредметов.TabIndex = 51;
             // 
             // label34
             // 
@@ -839,47 +821,47 @@
             this.label34.TabIndex = 50;
             this.label34.Text = "Выбрать предмет";
             // 
-            // tabPage4
+            // вклУченики
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.Linen;
-            this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage4.Controls.Add(this.УченикиСписок);
-            this.tabPage4.Controls.Add(this.ОтменитьСортировку);
-            this.tabPage4.Controls.Add(this.НайтиУченика);
-            this.tabPage4.Controls.Add(this.comboBox3);
-            this.tabPage4.Controls.Add(this.comboBox5);
-            this.tabPage4.Controls.Add(this.comboBox4);
-            this.tabPage4.Controls.Add(this.button6);
-            this.tabPage4.Controls.Add(this.label24);
-            this.tabPage4.Controls.Add(this.textBox15);
-            this.tabPage4.Controls.Add(this.textBox11);
-            this.tabPage4.Controls.Add(this.textBox12);
-            this.tabPage4.Controls.Add(this.textBox13);
-            this.tabPage4.Controls.Add(this.textBox14);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox9);
-            this.tabPage4.Controls.Add(this.label25);
-            this.tabPage4.Controls.Add(this.label23);
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.button5);
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.label21);
-            this.tabPage4.Controls.Add(this.label22);
-            this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.button3);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1355, 577);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Список учеников";
+            this.вклУченики.BackColor = System.Drawing.Color.Linen;
+            this.вклУченики.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.вклУченики.Controls.Add(this.УченикиСписок);
+            this.вклУченики.Controls.Add(this.ОтменитьСортировку);
+            this.вклУченики.Controls.Add(this.НайтиУченика);
+            this.вклУченики.Controls.Add(this.ВыборКласса);
+            this.вклУченики.Controls.Add(this.comboBox5);
+            this.вклУченики.Controls.Add(this.comboBox4);
+            this.вклУченики.Controls.Add(this.button6);
+            this.вклУченики.Controls.Add(this.label24);
+            this.вклУченики.Controls.Add(this.textBox15);
+            this.вклУченики.Controls.Add(this.textBox11);
+            this.вклУченики.Controls.Add(this.textBox12);
+            this.вклУченики.Controls.Add(this.textBox13);
+            this.вклУченики.Controls.Add(this.textBox14);
+            this.вклУченики.Controls.Add(this.textBox4);
+            this.вклУченики.Controls.Add(this.textBox5);
+            this.вклУченики.Controls.Add(this.textBox9);
+            this.вклУченики.Controls.Add(this.label25);
+            this.вклУченики.Controls.Add(this.label23);
+            this.вклУченики.Controls.Add(this.label18);
+            this.вклУченики.Controls.Add(this.button5);
+            this.вклУченики.Controls.Add(this.label19);
+            this.вклУченики.Controls.Add(this.label20);
+            this.вклУченики.Controls.Add(this.label21);
+            this.вклУченики.Controls.Add(this.label22);
+            this.вклУченики.Controls.Add(this.label17);
+            this.вклУченики.Controls.Add(this.button3);
+            this.вклУченики.Controls.Add(this.label13);
+            this.вклУченики.Controls.Add(this.label14);
+            this.вклУченики.Controls.Add(this.label15);
+            this.вклУченики.Controls.Add(this.label16);
+            this.вклУченики.Controls.Add(this.label9);
+            this.вклУченики.Location = new System.Drawing.Point(4, 25);
+            this.вклУченики.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.вклУченики.Name = "вклУченики";
+            this.вклУченики.Size = new System.Drawing.Size(1355, 577);
+            this.вклУченики.TabIndex = 3;
+            this.вклУченики.Text = "Список учеников";
             // 
             // УченикиСписок
             // 
@@ -959,10 +941,10 @@
             this.НайтиУченика.UseVisualStyleBackColor = false;
             this.НайтиУченика.Click += new System.EventHandler(this.НайтиУченика_Click);
             // 
-            // comboBox3
+            // ВыборКласса
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.ВыборКласса.FormattingEnabled = true;
+            this.ВыборКласса.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -972,11 +954,11 @@
             "7",
             "8",
             "9"});
-            this.comboBox3.Location = new System.Drawing.Point(197, 16);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(89, 24);
-            this.comboBox3.TabIndex = 78;
+            this.ВыборКласса.Location = new System.Drawing.Point(197, 16);
+            this.ВыборКласса.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ВыборКласса.Name = "ВыборКласса";
+            this.ВыборКласса.Size = new System.Drawing.Size(89, 24);
+            this.ВыборКласса.TabIndex = 78;
             // 
             // comboBox5
             // 
@@ -1281,50 +1263,49 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.вклУчителя);
+            this.tabControl1.Controls.Add(this.вклУченики);
+            this.tabControl1.Controls.Add(this.вклРасписание);
+            this.tabControl1.Controls.Add(this.вклПитание);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tabControl1.Location = new System.Drawing.Point(0, 27);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1363, 606);
+            this.tabControl1.Size = new System.Drawing.Size(1499, 606);
             this.tabControl1.TabIndex = 2;
             this.tabControl1.Click += new System.EventHandler(this.ОтменаСортировкиРасписание_Click);
             // 
-            // tabPage3
+            // вклРасписание
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Linen;
-            this.tabPage3.Controls.Add(this.СоставлениеРасписания);
-            this.tabPage3.Controls.Add(this.ОтменаСортировкиСоставление);
-            this.tabPage3.Controls.Add(this.comboBox12);
-            this.tabPage3.Controls.Add(this.button11);
-            this.tabPage3.Controls.Add(this.comboBox14);
-            this.tabPage3.Controls.Add(this.label37);
-            this.tabPage3.Controls.Add(this.ДобавитьРасписание);
-            this.tabPage3.Controls.Add(this.label38);
-            this.tabPage3.Controls.Add(this.comboBox13);
-            this.tabPage3.Controls.Add(this.label35);
-            this.tabPage3.Controls.Add(this.label36);
-            this.tabPage3.Controls.Add(this.comboBox11);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.comboBox10);
-            this.tabPage3.Controls.Add(this.comboBox9);
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.comboBox8);
-            this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(1355, 577);
-            this.tabPage3.TabIndex = 4;
-            this.tabPage3.Text = "Составление расписания";
+            this.вклРасписание.BackColor = System.Drawing.Color.Linen;
+            this.вклРасписание.Controls.Add(this.СоставлениеРасписания);
+            this.вклРасписание.Controls.Add(this.ОтменаСортировкиСоставление);
+            this.вклРасписание.Controls.Add(this.comboBox12);
+            this.вклРасписание.Controls.Add(this.button11);
+            this.вклРасписание.Controls.Add(this.КлассыСписок);
+            this.вклРасписание.Controls.Add(this.label37);
+            this.вклРасписание.Controls.Add(this.ДобавитьРасписание);
+            this.вклРасписание.Controls.Add(this.label38);
+            this.вклРасписание.Controls.Add(this.comboBox13);
+            this.вклРасписание.Controls.Add(this.label35);
+            this.вклРасписание.Controls.Add(this.label36);
+            this.вклРасписание.Controls.Add(this.comboBox11);
+            this.вклРасписание.Controls.Add(this.label10);
+            this.вклРасписание.Controls.Add(this.label4);
+            this.вклРасписание.Controls.Add(this.comboBox10);
+            this.вклРасписание.Controls.Add(this.comboBox9);
+            this.вклРасписание.Controls.Add(this.label3);
+            this.вклРасписание.Controls.Add(this.comboBox8);
+            this.вклРасписание.Controls.Add(this.label2);
+            this.вклРасписание.Location = new System.Drawing.Point(4, 25);
+            this.вклРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.вклРасписание.Name = "вклРасписание";
+            this.вклРасписание.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.вклРасписание.Size = new System.Drawing.Size(1355, 577);
+            this.вклРасписание.TabIndex = 4;
+            this.вклРасписание.Text = "Составление расписания";
             // 
             // СоставлениеРасписания
             // 
@@ -1340,7 +1321,7 @@
             this.СоставлениеРасписания.Name = "СоставлениеРасписания";
             this.СоставлениеРасписания.RowHeadersWidth = 51;
             this.СоставлениеРасписания.RowTemplate.Height = 24;
-            this.СоставлениеРасписания.Size = new System.Drawing.Size(855, 453);
+            this.СоставлениеРасписания.Size = new System.Drawing.Size(839, 453);
             this.СоставлениеРасписания.TabIndex = 111;
             // 
             // dataGridViewTextBoxColumn1
@@ -1433,11 +1414,11 @@
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.СортировкаРасписание_Click);
             // 
-            // comboBox14
+            // КлассыСписок
             // 
-            this.comboBox14.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.КлассыСписок.BackColor = System.Drawing.SystemColors.Window;
+            this.КлассыСписок.FormattingEnabled = true;
+            this.КлассыСписок.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -1449,11 +1430,11 @@
             "9",
             "10",
             "11"});
-            this.comboBox14.Location = new System.Drawing.Point(225, 60);
-            this.comboBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(85, 24);
-            this.comboBox14.TabIndex = 53;
+            this.КлассыСписок.Location = new System.Drawing.Point(225, 60);
+            this.КлассыСписок.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.КлассыСписок.Name = "КлассыСписок";
+            this.КлассыСписок.Size = new System.Drawing.Size(85, 24);
+            this.КлассыСписок.TabIndex = 53;
             // 
             // label37
             // 
@@ -1696,35 +1677,35 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Выбретите класс";
             // 
-            // tabPage5
+            // вклПитание
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.Linen;
-            this.tabPage5.Controls.Add(this.listView1);
-            this.tabPage5.Controls.Add(this.textBox10);
-            this.tabPage5.Controls.Add(this.textBox3);
-            this.tabPage5.Controls.Add(this.textBox2);
-            this.tabPage5.Controls.Add(this.textBox1);
-            this.tabPage5.Controls.Add(this.button18);
-            this.tabPage5.Controls.Add(this.label48);
-            this.tabPage5.Controls.Add(this.label46);
-            this.tabPage5.Controls.Add(this.label45);
-            this.tabPage5.Controls.Add(this.label43);
-            this.tabPage5.Controls.Add(this.label42);
-            this.tabPage5.Controls.Add(this.label41);
-            this.tabPage5.Controls.Add(this.label40);
-            this.tabPage5.Controls.Add(this.pictureBox1);
-            this.tabPage5.Controls.Add(this.label39);
-            this.tabPage5.Controls.Add(this.label44);
-            this.tabPage5.Controls.Add(this.button16);
-            this.tabPage5.Controls.Add(this.button17);
-            this.tabPage5.Controls.Add(this.label47);
-            this.tabPage5.Controls.Add(this.label52);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1355, 577);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "Питание";
+            this.вклПитание.BackColor = System.Drawing.Color.Linen;
+            this.вклПитание.Controls.Add(this.listView1);
+            this.вклПитание.Controls.Add(this.textBox10);
+            this.вклПитание.Controls.Add(this.textBox3);
+            this.вклПитание.Controls.Add(this.textBox2);
+            this.вклПитание.Controls.Add(this.textBox1);
+            this.вклПитание.Controls.Add(this.button18);
+            this.вклПитание.Controls.Add(this.label48);
+            this.вклПитание.Controls.Add(this.label46);
+            this.вклПитание.Controls.Add(this.label45);
+            this.вклПитание.Controls.Add(this.label43);
+            this.вклПитание.Controls.Add(this.label42);
+            this.вклПитание.Controls.Add(this.label41);
+            this.вклПитание.Controls.Add(this.label40);
+            this.вклПитание.Controls.Add(this.pictureBox1);
+            this.вклПитание.Controls.Add(this.label39);
+            this.вклПитание.Controls.Add(this.label44);
+            this.вклПитание.Controls.Add(this.button16);
+            this.вклПитание.Controls.Add(this.button17);
+            this.вклПитание.Controls.Add(this.label47);
+            this.вклПитание.Controls.Add(this.label52);
+            this.вклПитание.Location = new System.Drawing.Point(4, 25);
+            this.вклПитание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.вклПитание.Name = "вклПитание";
+            this.вклПитание.Size = new System.Drawing.Size(1355, 577);
+            this.вклПитание.TabIndex = 5;
+            this.вклПитание.Text = "Питание";
             // 
             // listView1
             // 
@@ -2049,7 +2030,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1363, 633);
+            this.ClientSize = new System.Drawing.Size(1499, 633);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2058,22 +2039,26 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.РасписаниеЗанятий)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.вклУчителя.ResumeLayout(false);
+            this.вклУчителя.PerformLayout();
+            this.грУдалить.ResumeLayout(false);
+            this.грУдалить.PerformLayout();
+            this.грДобавить.ResumeLayout(false);
+            this.грДобавить.PerformLayout();
+            this.грРедактировать.ResumeLayout(false);
+            this.грРедактировать.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.СписокПреподавателей)).EndInit();
+            this.вклУченики.ResumeLayout(false);
+            this.вклУченики.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.УченикиСписок)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.вклРасписание.ResumeLayout(false);
+            this.вклРасписание.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.СоставлениеРасписания)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
+            this.вклПитание.ResumeLayout(false);
+            this.вклПитание.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
@@ -2093,16 +2078,10 @@
         private System.Windows.Forms.ToolStripMenuItem обновитьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem базаДанныхУчениковToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem базаДанныхПреподавателейToolStripMenuItem;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button НайтиКласс;
-        private System.Windows.Forms.ComboBox КлассыСписок;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage вклУчителя;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button УдалитьДанные;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
@@ -2112,23 +2091,21 @@
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button ИзменитьДаные;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button ДобавитьПреподавателя;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Button НайтиУчителя;
+        private System.Windows.Forms.ComboBox СписокПредметов;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage вклУченики;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button button6;
@@ -2157,7 +2134,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage вклРасписание;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -2165,7 +2142,7 @@
         private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox КлассыСписок;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button ДобавитьРасписание;
         private System.Windows.Forms.Label label38;
@@ -2174,7 +2151,6 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.ComboBox comboBox11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ToolStripMenuItem расписаниеToolStripMenuItem;
         private System.Windows.Forms.ComboBox comboBox12;
         private System.Windows.Forms.ToolStripMenuItem базуПриСоставленииРасписанияToolStripMenuItem;
         private Database1DataSet database1DataSet;
@@ -2185,13 +2161,12 @@
         private Database1DataSet2 database1DataSet2;
         private System.Windows.Forms.BindingSource ученикBindingSource1;
         private Database1DataSet2TableAdapters.УченикTableAdapter ученикTableAdapter1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox ВыборКласса;
         private System.Windows.Forms.Button НайтиУченика;
         private System.Windows.Forms.Button ОтменитьСортировку;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button ОтменаСортировкиРасписание;
+        private System.Windows.Forms.Button ОтменаСортировки;
         private System.Windows.Forms.Button ОтменаСортировкиСоставление;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage вклПитание;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -2221,14 +2196,6 @@
         private System.Windows.Forms.ColumnHeader Номер_документа;
         private System.Windows.Forms.ColumnHeader Сумма;
         private System.Windows.Forms.BindingSource database1DataSetBindingSource1;
-        private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.DataGridView РасписаниеЗанятий;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Кабинет;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Время;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Предмет;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ФИО_учителя;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ДеньНедели;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Н_класса;
         private System.Windows.Forms.DataGridView СоставлениеРасписания;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -2242,6 +2209,26 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Имя_ученика;
         private System.Windows.Forms.DataGridViewTextBoxColumn Отчество_ученика;
         private System.Windows.Forms.DataGridViewTextBoxColumn Класс_ученика;
+        private System.Windows.Forms.ToolStripMenuItem добавитьДанныеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem преподавательДобавитьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ученикToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem расписаниеToolStripMenuItem1;
+        private System.Windows.Forms.GroupBox грДобавить;
+        private System.Windows.Forms.ToolStripMenuItem редактироватьДанныеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem преподавательToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ученикToolStripMenuItem1;
+        private System.Windows.Forms.GroupBox грРедактировать;
+        private System.Windows.Forms.ToolStripMenuItem удалитьДанныеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem преподавательУдалитьToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem ученикToolStripMenuItem2;
+        private System.Windows.Forms.DataGridView СписокПреподавателей;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Учитель_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Учитель_Фамилия;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Учитель_Имя;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Учитель_Отчество;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Учитель_Предмет;
+        private System.Windows.Forms.Label ИнформационноеСообщение;
+        private System.Windows.Forms.GroupBox грУдалить;
     }
 }
 
