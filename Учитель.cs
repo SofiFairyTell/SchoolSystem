@@ -14,9 +14,11 @@ namespace WindowsFormsApp1
 {
     public partial class Учитель : Form
     {
-        public Учитель()
+        private string login;
+        public Учитель(string Login)
         {
             InitializeComponent();
+            login = Login;
         }
         SqlConnection sqlConnection;
         // вернуть позже
@@ -81,6 +83,30 @@ namespace WindowsFormsApp1
                     SqlReader3.Close();
             }
 
+            SqlDataReader SqlReaderTeacher = null;
+            SqlCommand commandTeacher = new SqlCommand("SELECT * FROM [Учитель] WHERE [Id_Учитель] = @Id", sqlConnection);
+            commandTeacher.Parameters.AddWithValue("Id", login);
+            try
+            {
+                SqlReaderTeacher = await commandTeacher.ExecuteReaderAsync();
+                while (await SqlReaderTeacher.ReadAsync())
+                {
+                    полеФамилия.Text = Convert.ToString(SqlReaderTeacher["Фамилия"]);
+                    полеИмя.Text = Convert.ToString(SqlReaderTeacher["Имя"]);
+                    полеОтчество.Text = Convert.ToString(SqlReaderTeacher["Отчество"]);
+                    полеПредмет.Text = Convert.ToString(SqlReaderTeacher["Предмет"]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), ex.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (SqlReaderTeacher != null)
+                    SqlReaderTeacher.Close();
+            }
+
         }
 
         private async void НайтиУченика_Click(object sender, EventArgs e)
@@ -89,7 +115,7 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrEmpty(КлассыСписок.Text) && !string.IsNullOrWhiteSpace(КлассыСписок.Text))
             {
                 SqlDataReader SqlReader = null;
-                SqlCommand command = new SqlCommand("SELECT * FROM [Ученик] WHERE [Класс] = @Класс ", sqlConnection);
+                SqlCommand command = new SqlCommand("SELECT * FROM [Ученик] WHERE [Класс]=@Класс ", sqlConnection);
                 command.Parameters.AddWithValue("Класс", КлассыСписок.Text);
                 try
                 {
@@ -126,7 +152,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private async void базуПриСоставленииРасписанияToolStripMenuItem_Click(object sender, EventArgs e) //обновление базы данных с составлением расписания
+        private async void базуРасписанияToolStripMenuItem_Click(object sender, EventArgs e) //обновление базы данных с составлением расписания
         {
             //listView5.Items.Clear();
             РасписаниеЗанятий.Rows.Clear();
@@ -163,11 +189,14 @@ namespace WindowsFormsApp1
         private async void НайтиРасписание_Click(object sender, EventArgs e) //расписание
         {
             РасписаниеЗанятий.Rows.Clear();
-            if (!string.IsNullOrEmpty(КлассыСписок.Text) && !string.IsNullOrWhiteSpace(КлассыСписок.Text))
+            if (!string.IsNullOrEmpty(ВыборКласса.Text) && !string.IsNullOrWhiteSpace(ВыборКласса.Text))
             {
                 SqlDataReader SqlReader = null;
-                SqlCommand command = new SqlCommand("SELECT * FROM [Составление_расписания] WHERE [Класс] = @Класс", sqlConnection);
-                command.Parameters.AddWithValue("Класс", ВыборКласса.Text);
+                string[] m = ВыборКласса.Text.Split(',').ToArray();
+                for (int i=0; i<m.Length; i++)
+                {                  
+                    SqlCommand command = new SqlCommand("SELECT * FROM [Составление_расписания] WHERE [Класс]=@Класс", sqlConnection);  
+                    command.Parameters.AddWithValue("Класс", m[i]);
                 try
                 {
                     SqlReader = await command.ExecuteReaderAsync();
@@ -182,30 +211,30 @@ namespace WindowsFormsApp1
                             Convert.ToString(SqlReader["Класс"])
                             );
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message.ToString(), ex.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    if (SqlReader != null)
                         SqlReader.Close();
                 }
-            }
+                catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), ex.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        if (SqlReader != null)
+                            SqlReader.Close();
+                    }
+                }
+                }
             else
             {
                 MessageBox.Show("Поле 'Класс' должно быть заполнено!");
             }
         }
-        private async void СортировкаРасписание_Click(object sender, EventArgs e) //сортировка по классам при составлении расписания
+        private async void СортировкаРасписание_Click(string ФИО) //сортировка по классам при составлении расписания
         {
             РасписаниеЗанятий.Rows.Clear();
-            if (!string.IsNullOrEmpty(ВыборКласса.Text) && !string.IsNullOrWhiteSpace(ВыборКласса.Text))
-            {
                 SqlDataReader SqlReader = null;
-                SqlCommand command = new SqlCommand("SELECT * FROM [Составление_расписания] WHERE [Класс] = @Класс", sqlConnection);
-                command.Parameters.AddWithValue("Класс", ВыборКласса.Text);
+                SqlCommand command = new SqlCommand("SELECT * FROM [Составление_расписания] WHERE [ФИО_учителя] = @ФИО", sqlConnection);
+                command.Parameters.AddWithValue("ФИО", ФИО);
                 try
                 {
                     SqlReader = await command.ExecuteReaderAsync();
@@ -230,12 +259,8 @@ namespace WindowsFormsApp1
                     if (SqlReader != null)
                         SqlReader.Close();
                 }
+ 
 
-            }
-            else
-            {
-                MessageBox.Show("Поле 'Класс' должно быть заполнено!");
-            }
         }
         private async void ОтменаСортировкиРасписание_Click(object sender, EventArgs e)//ОтменаСортировки
         {
@@ -269,6 +294,12 @@ namespace WindowsFormsApp1
                 if (SqlReader3 != null)
                     SqlReader3.Close();
             }
+        }
+
+        private void НайтиМоеРасписание_Click(object sender, EventArgs e)
+        {
+            УчительПанель.SelectedTab = УчительРасписание;
+            СортировкаРасписание_Click(полеФамилия.Text.Trim() + ' '+ полеИмя.Text.Trim() + ' '+ полеОтчество.Text.Trim());
         }
     }
 }

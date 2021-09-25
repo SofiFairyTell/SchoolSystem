@@ -18,6 +18,8 @@ namespace WindowsFormsApp1
 
         private async void Form1_Load(object sender, EventArgs e) //отображение информации которая имеется в базе данных
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet6.Учитель". При необходимости она может быть перемещена или удалена.
+            this.учительTableAdapter.Fill(this.database1DataSet6.Учитель);
             sqlConnection = new SqlConnection(connectionString); //ученики
             await sqlConnection.OpenAsync();
             SqlDataReader SqlReader = null;
@@ -421,15 +423,15 @@ namespace WindowsFormsApp1
                 !string.IsNullOrEmpty(comboBox12.Text) && !string.IsNullOrWhiteSpace(comboBox12.Text) &&
                 !string.IsNullOrEmpty(comboBox13.Text) && !string.IsNullOrWhiteSpace(comboBox13.Text))
             {
-                SqlCommand command = new SqlCommand("INSERT INTO [Составление_расписания] (Класс, День_недели, Время_урока, Предмет, ФИО_учителя, Номер_кабинета) VALUES(@Класс, @День_недели, @Время_урока, @Предмет, @ФИО_учителя,  @Номер_кабинета)", sqlConnection);
-                command.Parameters.AddWithValue("Класс", comboBox8.Text);
-                command.Parameters.AddWithValue("День_недели", comboBox10.Text);
-                command.Parameters.AddWithValue("Время_урока", comboBox9.Text);
-                command.Parameters.AddWithValue("Предмет", comboBox11.Text);
-                command.Parameters.AddWithValue("ФИО_учителя", comboBox12.Text);
-                command.Parameters.AddWithValue("Номер_кабинета", comboBox13.Text);
-                await command.ExecuteNonQueryAsync();
-                MessageBox.Show("Добавлено в расписание");
+                    SqlCommand command = new SqlCommand("INSERT INTO [Составление_расписания] (Класс, День_недели, Время_урока, Предмет, ФИО_учителя, Номер_кабинета) VALUES(@Класс, @День_недели, @Время_урока, @Предмет, @ФИО_учителя,  @Номер_кабинета)", sqlConnection);
+                    command.Parameters.AddWithValue("Класс", comboBox8.Text);
+                    command.Parameters.AddWithValue("День_недели", comboBox10.Text);
+                    command.Parameters.AddWithValue("Время_урока", comboBox9.Text);
+                    command.Parameters.AddWithValue("Предмет", comboBox11.Text);
+                    command.Parameters.AddWithValue("ФИО_учителя", comboBox12.Text);
+                    command.Parameters.AddWithValue("Номер_кабинета", comboBox13.Text);
+                    await command.ExecuteNonQueryAsync();
+                    MessageBox.Show("Добавлено в расписание");
             }
             else
             {
@@ -861,7 +863,6 @@ namespace WindowsFormsApp1
             грРедактироватьУченик.Visible = false;
             грУдалитьУченик.Visible = false;
         }
-
 
     }
 }

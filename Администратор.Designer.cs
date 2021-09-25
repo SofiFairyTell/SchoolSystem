@@ -139,6 +139,8 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ОтменаСортировкиСоставление = new System.Windows.Forms.Button();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.учительBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet6 = new WindowsFormsApp1.Database1DataSet6();
             this.button11 = new System.Windows.Forms.Button();
             this.КлассыСписок = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -190,6 +192,7 @@
             this.ученикBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ученикTableAdapter1 = new WindowsFormsApp1.Database1DataSet2TableAdapters.УченикTableAdapter();
             this.database1DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.учительTableAdapter = new WindowsFormsApp1.Database1DataSet6TableAdapters.УчительTableAdapter();
             this.menuStrip1.SuspendLayout();
             this.вклУчителя.SuspendLayout();
             this.грУдалить.SuspendLayout();
@@ -206,6 +209,8 @@
             this.tabControl1.SuspendLayout();
             this.вклРасписание.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.СоставлениеРасписания)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.учительBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet6)).BeginInit();
             this.вклПитание.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -226,7 +231,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1499, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1493, 30);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -387,7 +392,7 @@
             this.вклУчителя.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.вклУчителя.Name = "вклУчителя";
             this.вклУчителя.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.вклУчителя.Size = new System.Drawing.Size(1491, 577);
+            this.вклУчителя.Size = new System.Drawing.Size(1307, 1015);
             this.вклУчителя.TabIndex = 0;
             this.вклУчителя.Text = "Список преподавателей";
             // 
@@ -841,7 +846,7 @@
             this.вклУченики.Location = new System.Drawing.Point(4, 25);
             this.вклУченики.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.вклУченики.Name = "вклУченики";
-            this.вклУченики.Size = new System.Drawing.Size(1491, 577);
+            this.вклУченики.Size = new System.Drawing.Size(1512, 577);
             this.вклУченики.TabIndex = 3;
             this.вклУченики.Text = "Список учеников";
             // 
@@ -1297,16 +1302,17 @@
             this.tabControl1.Controls.Add(this.вклПитание);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
+            this.tabControl1.Location = new System.Drawing.Point(0, 30);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1499, 606);
+            this.tabControl1.Size = new System.Drawing.Size(1493, 800);
             this.tabControl1.TabIndex = 2;
             this.tabControl1.Click += new System.EventHandler(this.ОтменаСортировкиРасписание_Click);
             // 
             // вклРасписание
             // 
+            this.вклРасписание.AutoScroll = true;
             this.вклРасписание.BackColor = System.Drawing.Color.Linen;
             this.вклРасписание.Controls.Add(this.СоставлениеРасписания);
             this.вклРасписание.Controls.Add(this.ОтменаСортировкиСоставление);
@@ -1331,7 +1337,7 @@
             this.вклРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.вклРасписание.Name = "вклРасписание";
             this.вклРасписание.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.вклРасписание.Size = new System.Drawing.Size(1491, 577);
+            this.вклРасписание.Size = new System.Drawing.Size(1485, 771);
             this.вклРасписание.TabIndex = 4;
             this.вклРасписание.Text = "Составление расписания";
             // 
@@ -1419,15 +1425,29 @@
             "14:30-15:15",
             "15:30-16:15"});
             this.comboBox12.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBox12.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.учительBindingSource, "Фамилия", true));
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Items.AddRange(new object[] {
-            "Петров Петр Петрович",
-            "Иванов Иван иванович"});
+            "Петров Иван Иванович   ",
+            "Иванова Галина Сергеевна     ",
+            "Смирнов Петр Алексеевич   ",
+            "Иванов Иван Иванович ",
+            "Романов Сергей Иванович"});
             this.comboBox12.Location = new System.Drawing.Point(1237, 97);
             this.comboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(237, 24);
             this.comboBox12.TabIndex = 86;
+            // 
+            // учительBindingSource
+            // 
+            this.учительBindingSource.DataMember = "Учитель";
+            this.учительBindingSource.DataSource = this.database1DataSet6;
+            // 
+            // database1DataSet6
+            // 
+            this.database1DataSet6.DataSetName = "Database1DataSet6";
+            this.database1DataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button11
             // 
@@ -1731,7 +1751,7 @@
             this.вклПитание.Location = new System.Drawing.Point(4, 25);
             this.вклПитание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.вклПитание.Name = "вклПитание";
-            this.вклПитание.Size = new System.Drawing.Size(1491, 577);
+            this.вклПитание.Size = new System.Drawing.Size(1512, 577);
             this.вклПитание.TabIndex = 5;
             this.вклПитание.Text = "Питание";
             // 
@@ -2058,11 +2078,16 @@
             this.database1DataSetBindingSource1.DataSource = this.database1DataSet;
             this.database1DataSetBindingSource1.Position = 0;
             // 
+            // учительTableAdapter
+            // 
+            this.учительTableAdapter.ClearBeforeFill = true;
+            // 
             // Администратор
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1499, 633);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1514, 668);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2095,6 +2120,8 @@
             this.вклРасписание.ResumeLayout(false);
             this.вклРасписание.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.СоставлениеРасписания)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.учительBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet6)).EndInit();
             this.вклПитание.ResumeLayout(false);
             this.вклПитание.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).EndInit();
@@ -2270,6 +2297,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Класс;
         private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Номер;
         private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Сумма;
+        private Database1DataSet6 database1DataSet6;
+        private System.Windows.Forms.BindingSource учительBindingSource;
+        private Database1DataSet6TableAdapters.УчительTableAdapter учительTableAdapter;
     }
 }
 

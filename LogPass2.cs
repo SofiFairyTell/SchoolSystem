@@ -7,6 +7,7 @@ namespace WindowsFormsApp1
     public partial class LogPass2 : Form
     {
         Thread th;
+        public string Login, Password;
         int start = 0;
         int k = 2;
         int p = 3;
@@ -17,12 +18,11 @@ namespace WindowsFormsApp1
 
         public void open(object obj)
         {
-            Application.Run(new Учитель());
+            Application.Run(new Учитель(Login));
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            string Login, Password;
+        {          
             Login = textBox1.Text;
             Password = textBox2.Text;
 
