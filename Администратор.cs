@@ -129,7 +129,8 @@ namespace WindowsFormsApp1
 
         /**/
         #region Вкладка Список Учеников
-        private async void Button3_Click(object sender, EventArgs e) //добавление ученика
+
+        private async void ДобавитьУченик_Click(object sender, EventArgs e) //добавление ученика
         {
             if (!string.IsNullOrEmpty(textBox9.Text) && !string.IsNullOrWhiteSpace(textBox9.Text) &&
                 !string.IsNullOrEmpty(textBox5.Text) && !string.IsNullOrWhiteSpace(textBox5.Text) &&
@@ -219,7 +220,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private async void Button5_Click(object sender, EventArgs e) // редактирование данных учеников
+        private async void ИзменитьУченик_Click(object sender, EventArgs e) // редактирование данных учеников
         {
             if (!string.IsNullOrEmpty(textBox11.Text) && !string.IsNullOrWhiteSpace(textBox11.Text) &&
                 !string.IsNullOrEmpty(textBox14.Text) && !string.IsNullOrWhiteSpace(textBox14.Text) &&
@@ -242,7 +243,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private async void Button6_Click(object sender, EventArgs e) // удаление данных ученика
+        private async void УдалитьУченик_Click(object sender, EventArgs e) // удаление данных ученика
         {
             if (!string.IsNullOrEmpty(textBox15.Text) && !string.IsNullOrWhiteSpace(textBox15.Text))
             {
@@ -809,6 +810,28 @@ namespace WindowsFormsApp1
             грРедактировать.Visible = false;
             грУдалить.Visible = false;
         }
+
+        private void УченикУдалитьToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            грРедактироватьУченик.Visible = false;
+            грДобавитьУченик.Visible = false;
+            грУдалитьУченик.Visible = true;
+        }
+
+        private void УченикРедактироваToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            грРедактироватьУченик.Visible = true;
+            грДобавитьУченик.Visible = false;
+            грУдалитьУченик.Visible = false;
+        }
+
+        private void УченикДобавитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            грДобавитьУченик.Visible = true;
+            грРедактироватьУченик.Visible = false;
+            грУдалитьУченик.Visible = false;
+        }
+
 
     }
 }
