@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup11 = new System.Windows.Forms.ListViewGroup("Id", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup12 = new System.Windows.Forms.ListViewGroup("Фамилия", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Имя", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup16 = new System.Windows.Forms.ListViewGroup("Id", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup17 = new System.Windows.Forms.ListViewGroup("Фамилия", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup18 = new System.Windows.Forms.ListViewGroup("Имя", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup19 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup20 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Администратор));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -401,7 +401,7 @@
             this.грУдалить.Controls.Add(this.УдалитьДанные);
             this.грУдалить.Controls.Add(this.label6);
             this.грУдалить.Controls.Add(this.textBox6);
-            this.грУдалить.Location = new System.Drawing.Point(862, 345);
+            this.грУдалить.Location = new System.Drawing.Point(976, 349);
             this.грУдалить.Name = "грУдалить";
             this.грУдалить.Size = new System.Drawing.Size(491, 136);
             this.грУдалить.TabIndex = 114;
@@ -454,7 +454,7 @@
             this.грДобавить.Controls.Add(this.textBox18);
             this.грДобавить.Controls.Add(this.label30);
             this.грДобавить.Controls.Add(this.ДобавитьПреподавателя);
-            this.грДобавить.Location = new System.Drawing.Point(862, 36);
+            this.грДобавить.Location = new System.Drawing.Point(976, 40);
             this.грДобавить.Name = "грДобавить";
             this.грДобавить.Size = new System.Drawing.Size(491, 262);
             this.грДобавить.TabIndex = 109;
@@ -579,7 +579,7 @@
             this.грРедактировать.Controls.Add(this.textBox16);
             this.грРедактировать.Controls.Add(this.textBox8);
             this.грРедактировать.Controls.Add(this.ИзменитьДаные);
-            this.грРедактировать.Location = new System.Drawing.Point(862, 36);
+            this.грРедактировать.Location = new System.Drawing.Point(976, 40);
             this.грРедактировать.Name = "грРедактировать";
             this.грРедактировать.Size = new System.Drawing.Size(491, 317);
             this.грРедактировать.TabIndex = 110;
@@ -716,7 +716,7 @@
             this.ИнформационноеСообщение.BackColor = System.Drawing.SystemColors.Info;
             this.ИнформационноеСообщение.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ИнформационноеСообщение.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ИнформационноеСообщение.Location = new System.Drawing.Point(853, 493);
+            this.ИнформационноеСообщение.Location = new System.Drawing.Point(973, 494);
             this.ИнформационноеСообщение.Name = "ИнформационноеСообщение";
             this.ИнформационноеСообщение.Size = new System.Drawing.Size(494, 60);
             this.ИнформационноеСообщение.TabIndex = 113;
@@ -735,7 +735,7 @@
             this.СписокПреподавателей.Name = "СписокПреподавателей";
             this.СписокПреподавателей.RowHeadersWidth = 51;
             this.СписокПреподавателей.RowTemplate.Height = 24;
-            this.СписокПреподавателей.Size = new System.Drawing.Size(831, 498);
+            this.СписокПреподавателей.Size = new System.Drawing.Size(948, 498);
             this.СписокПреподавателей.TabIndex = 112;
             // 
             // Учитель_ID
@@ -856,7 +856,7 @@
             this.грУдалитьУченик.Controls.Add(this.УдалитьУченик);
             this.грУдалитьУченик.Controls.Add(this.label25);
             this.грУдалитьУченик.Controls.Add(this.textBox15);
-            this.грУдалитьУченик.Location = new System.Drawing.Point(711, 327);
+            this.грУдалитьУченик.Location = new System.Drawing.Point(988, 332);
             this.грУдалитьУченик.Name = "грУдалитьУченик";
             this.грУдалитьУченик.Size = new System.Drawing.Size(484, 135);
             this.грУдалитьУченик.TabIndex = 114;
@@ -918,7 +918,7 @@
             this.грДобавитьУченик.Controls.Add(this.textBox5);
             this.грДобавитьУченик.Controls.Add(this.comboBox4);
             this.грДобавитьУченик.Controls.Add(this.textBox4);
-            this.грДобавитьУченик.Location = new System.Drawing.Point(711, 29);
+            this.грДобавитьУченик.Location = new System.Drawing.Point(988, 34);
             this.грДобавитьУченик.Name = "грДобавитьУченик";
             this.грДобавитьУченик.Size = new System.Drawing.Size(477, 238);
             this.грДобавитьУченик.TabIndex = 113;
@@ -1037,7 +1037,7 @@
             this.УченикиСписок.Name = "УченикиСписок";
             this.УченикиСписок.RowHeadersWidth = 51;
             this.УченикиСписок.RowTemplate.Height = 24;
-            this.УченикиСписок.Size = new System.Drawing.Size(683, 508);
+            this.УченикиСписок.Size = new System.Drawing.Size(958, 508);
             this.УченикиСписок.TabIndex = 111;
             // 
             // IDУченика
@@ -1146,7 +1146,7 @@
             this.грРедактироватьУченик.Controls.Add(this.textBox13);
             this.грРедактироватьУченик.Controls.Add(this.textBox12);
             this.грРедактироватьУченик.Controls.Add(this.textBox11);
-            this.грРедактироватьУченик.Location = new System.Drawing.Point(711, 59);
+            this.грРедактироватьУченик.Location = new System.Drawing.Point(988, 64);
             this.грРедактироватьУченик.Name = "грРедактироватьУченик";
             this.грРедактироватьУченик.Size = new System.Drawing.Size(477, 262);
             this.грРедактироватьУченик.TabIndex = 112;
@@ -1737,22 +1737,22 @@
             this.Класс,
             this.Номер_документа,
             this.Сумма});
-            listViewGroup11.Header = "Id";
-            listViewGroup11.Name = "listViewGroup1";
-            listViewGroup12.Header = "Фамилия";
-            listViewGroup12.Name = "listViewGroup2";
-            listViewGroup13.Header = "Имя";
-            listViewGroup13.Name = "listViewGroup3";
-            listViewGroup14.Header = "ListViewGroup";
-            listViewGroup14.Name = "listViewGroup4";
-            listViewGroup15.Header = "ListViewGroup";
-            listViewGroup15.Name = "listViewGroup5";
+            listViewGroup16.Header = "Id";
+            listViewGroup16.Name = "listViewGroup1";
+            listViewGroup17.Header = "Фамилия";
+            listViewGroup17.Name = "listViewGroup2";
+            listViewGroup18.Header = "Имя";
+            listViewGroup18.Name = "listViewGroup3";
+            listViewGroup19.Header = "ListViewGroup";
+            listViewGroup19.Name = "listViewGroup4";
+            listViewGroup20.Header = "ListViewGroup";
+            listViewGroup20.Name = "listViewGroup5";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup11,
-            listViewGroup12,
-            listViewGroup13,
-            listViewGroup14,
-            listViewGroup15});
+            listViewGroup16,
+            listViewGroup17,
+            listViewGroup18,
+            listViewGroup19,
+            listViewGroup20});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(25, 66);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2052,7 +2052,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.Info;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(711, 487);
+            this.label5.Location = new System.Drawing.Point(971, 496);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(494, 60);
             this.label5.TabIndex = 115;
