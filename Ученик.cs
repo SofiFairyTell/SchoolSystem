@@ -22,11 +22,6 @@ namespace WindowsFormsApp1
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            // вернуть позже
-            // string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
-           // string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\projects\Database1.mdf;Integrated Security=True";
-
-            
             sqlConnection = new SqlConnection(connectionString);
             await sqlConnection.OpenAsync();
 
@@ -84,18 +79,12 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Указанные данные не совпадают.\n Попыток больше нет попробуйте в другой раз");
                 Application.Exit();
             }
-
         }
-
         private async void button2_Click(object sender, EventArgs e)
         {
-            // вернуть позже
-            // string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
-            //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\projects\Database1.mdf;Integrated Security=True";
-
+            РасписаниеЗанятий.Rows.Clear();
             sqlConnection = new SqlConnection(connectionString);
             await sqlConnection.OpenAsync();
-            listBox2.Items.Clear();
             if (!string.IsNullOrEmpty(comboBox1.Text) && !string.IsNullOrWhiteSpace(comboBox1.Text) &&
                 !string.IsNullOrEmpty(comboBox2.Text) && !string.IsNullOrWhiteSpace(comboBox2.Text))
             {
@@ -103,24 +92,7 @@ namespace WindowsFormsApp1
                 SqlCommand command = new SqlCommand("SELECT * FROM [Составление_расписания] WHERE [Класс] = @Класс AND [День_недели] = @День_недели", sqlConnection);
                 command.Parameters.AddWithValue("Класс", comboBox1.Text);
                 command.Parameters.AddWithValue("День_недели", comboBox2.Text);
-                try
-                {
-                    SqlReader = await command.ExecuteReaderAsync();
-                    while (await SqlReader.ReadAsync())
-                    {
-                        listBox2.Items.Add(Convert.ToString(SqlReader["Время_урока"]) + " " + Convert.ToString(SqlReader["Предмет"]) + " " + Convert.ToString(SqlReader["ФИО_учителя"]) + " " + Convert.ToString(SqlReader["Номер_кабинета"]));
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message.ToString(), ex.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    if (SqlReader != null)
-                        SqlReader.Close();
-                }
-
+                ДобавлениеРасписаниеЗанятий(SqlReader, command);
             }
             else
             {
@@ -128,16 +100,40 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private async void ДобавлениеРасписаниеЗанятий(SqlDataReader SqlReader, SqlCommand command)
         {
-            listBox2.Items.Clear();
+            try
+            {
+                SqlReader = await command.ExecuteReaderAsync();
+                while (await SqlReader.ReadAsync())
+                {
+                    РасписаниеЗанятий.Rows.Add(
+                        Convert.ToString(SqlReader["Номер_кабинета"]),
+                        Convert.ToString(SqlReader["Время_урока"]),
+                        Convert.ToString(SqlReader["Предмет"]),
+                        Convert.ToString(SqlReader["ФИО_учителя"])
+                        );
+                }
+                SqlReader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), ex.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (SqlReader != null)
+                    SqlReader.Close();
+            }
+        }
+
+       private void button14_Click(object sender, EventArgs e)
+        {
+            РасписаниеЗанятий.Rows.Clear();
         }
 
         private async void button17_Click(object sender, EventArgs e)
         {
-            //listBox11.Items.Clear();
-            //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
-
             sqlConnection = new SqlConnection(connectionString);
             await sqlConnection.OpenAsync();
             SqlDataReader SqlReader5 = null;
@@ -193,8 +189,6 @@ namespace WindowsFormsApp1
         private async void обновлениеПитанияToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listBox11.Items.Clear();
-            //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
-
             sqlConnection = new SqlConnection(connectionString);
             await sqlConnection.OpenAsync();
             SqlDataReader SqlReader5 = null;

@@ -72,12 +72,12 @@
             this.label47 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.РасписаниеЗанятий = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -106,6 +106,10 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.Оценки = new System.Windows.Forms.TabControl();
+            this.Кабинет = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Время = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Предмет = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ФИО_учителя = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet4)).BeginInit();
@@ -121,6 +125,7 @@
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.РасписаниеЗанятий)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.Оценки.SuspendLayout();
             this.SuspendLayout();
@@ -134,7 +139,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1363, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1363, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -145,7 +150,7 @@
             this.печатьToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // правкаToolStripMenuItem
@@ -171,7 +176,7 @@
             this.инструментыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.обновлениеПитанияToolStripMenuItem});
             this.инструментыToolStripMenuItem.Name = "инструментыToolStripMenuItem";
-            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.инструментыToolStripMenuItem.Text = "Инструменты";
             // 
             // обновлениеПитанияToolStripMenuItem
@@ -276,7 +281,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(240, 34);
+            this.textBox10.Location = new System.Drawing.Point(236, 29);
             this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(137, 22);
@@ -481,7 +486,7 @@
             this.listBox11.Location = new System.Drawing.Point(27, 69);
             this.listBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox11.Name = "listBox11";
-            this.listBox11.Size = new System.Drawing.Size(775, 516);
+            this.listBox11.Size = new System.Drawing.Size(775, 436);
             this.listBox11.TabIndex = 129;
             // 
             // label47
@@ -510,12 +515,12 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Linen;
+            this.tabPage2.Controls.Add(this.РасписаниеЗанятий);
             this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.button14);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.comboBox2);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.listBox2);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -524,6 +529,21 @@
             this.tabPage2.Size = new System.Drawing.Size(1541, 553);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Расписание";
+            // 
+            // РасписаниеЗанятий
+            // 
+            this.РасписаниеЗанятий.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.РасписаниеЗанятий.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Кабинет,
+            this.Время,
+            this.Предмет,
+            this.ФИО_учителя});
+            this.РасписаниеЗанятий.Location = new System.Drawing.Point(18, 70);
+            this.РасписаниеЗанятий.Name = "РасписаниеЗанятий";
+            this.РасписаниеЗанятий.RowHeadersWidth = 51;
+            this.РасписаниеЗанятий.RowTemplate.Height = 24;
+            this.РасписаниеЗанятий.Size = new System.Drawing.Size(980, 318);
+            this.РасписаниеЗанятий.TabIndex = 116;
             // 
             // comboBox1
             // 
@@ -613,17 +633,6 @@
             this.label1.Size = new System.Drawing.Size(287, 22);
             this.label1.TabIndex = 111;
             this.label1.Text = "Выбретите день недели и класс";
-            // 
-            // listBox2
-            // 
-            this.listBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(21, 65);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(977, 436);
-            this.listBox2.TabIndex = 110;
             // 
             // label12
             // 
@@ -956,6 +965,34 @@
             this.Оценки.Size = new System.Drawing.Size(1549, 582);
             this.Оценки.TabIndex = 1;
             // 
+            // Кабинет
+            // 
+            this.Кабинет.HeaderText = "Кабинет";
+            this.Кабинет.MinimumWidth = 6;
+            this.Кабинет.Name = "Кабинет";
+            this.Кабинет.Width = 125;
+            // 
+            // Время
+            // 
+            this.Время.HeaderText = "Время";
+            this.Время.MinimumWidth = 6;
+            this.Время.Name = "Время";
+            this.Время.Width = 125;
+            // 
+            // Предмет
+            // 
+            this.Предмет.HeaderText = "Предмет";
+            this.Предмет.MinimumWidth = 6;
+            this.Предмет.Name = "Предмет";
+            this.Предмет.Width = 125;
+            // 
+            // ФИО_учителя
+            // 
+            this.ФИО_учителя.HeaderText = "Учитель";
+            this.ФИО_учителя.MinimumWidth = 6;
+            this.ФИО_учителя.Name = "ФИО_учителя";
+            this.ФИО_учителя.Width = 125;
+            // 
             // Ученик
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -985,6 +1022,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.РасписаниеЗанятий)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.Оценки.ResumeLayout(false);
@@ -1042,7 +1080,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox textBox2;
@@ -1071,5 +1108,10 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TabControl Оценки;
+        private System.Windows.Forms.DataGridView РасписаниеЗанятий;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Кабинет;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Время;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Предмет;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ФИО_учителя;
     }
 }

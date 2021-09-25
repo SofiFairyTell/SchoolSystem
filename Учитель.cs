@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -83,7 +82,6 @@ namespace WindowsFormsApp1
                     SqlReaderTeacher.Close();
             }
         }
-
         private async void НайтиУченика_Click(object sender, EventArgs e)
         {
             УченикиСписок.Rows.Clear();
