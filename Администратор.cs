@@ -552,7 +552,7 @@ namespace WindowsFormsApp1
 
         #region Вкладка Питание
 
-        private async void button16_Click(object sender, EventArgs e)//отмена сортировки питание
+        private async void ОтменитьПоиск_Click(object sender, EventArgs e)//отмена сортировки питание
         {
             ПитаниеСписок.Rows.Clear();
             //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\!БГТУ\WindowsFormsApp1\Database1.mdf;Integrated Security=True";
@@ -587,7 +587,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private async void button17_Click(object sender, EventArgs e)
+        private async void НайтиОплату_Click(object sender, EventArgs e)
         {
             ПитаниеСписок.Rows.Clear();
             if (!string.IsNullOrEmpty(textBox10.Text) && !string.IsNullOrWhiteSpace(textBox10.Text))
@@ -801,7 +801,7 @@ namespace WindowsFormsApp1
         }
 
         #endregion
-        private async void button18_Click(object sender, EventArgs e)
+        private async void ДобавитьОплату_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox1.Text) &&
             !string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox2.Text) &&

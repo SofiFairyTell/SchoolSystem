@@ -88,6 +88,7 @@
             this.СписокПредметов = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.вклУченики = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
             this.грУдалитьУченик = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.УдалитьУченик = new System.Windows.Forms.Button();
@@ -155,11 +156,19 @@
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.вклПитание = new System.Windows.Forms.TabPage();
+            this.ПитаниеСписок = new System.Windows.Forms.DataGridView();
+            this.Питание_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Фамилия = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Имя = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Отчество = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Класс = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Номер = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Сумма = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button18 = new System.Windows.Forms.Button();
+            this.ДобавитьОплату = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -170,8 +179,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.ОтменитьПоиск = new System.Windows.Forms.Button();
+            this.НайтиОплату = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.database1DataSet = new WindowsFormsApp1.Database1DataSet();
@@ -181,15 +190,6 @@
             this.ученикBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ученикTableAdapter1 = new WindowsFormsApp1.Database1DataSet2TableAdapters.УченикTableAdapter();
             this.database1DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.ПитаниеСписок = new System.Windows.Forms.DataGridView();
-            this.Питание_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Питание_Фамилия = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Питание_Имя = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Питание_Отчество = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Питание_Класс = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Питание_Номер = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Питание_Сумма = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.вклУчителя.SuspendLayout();
             this.грУдалить.SuspendLayout();
@@ -207,13 +207,13 @@
             this.вклРасписание.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.СоставлениеРасписания)).BeginInit();
             this.вклПитание.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -226,7 +226,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1499, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1499, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -235,7 +235,7 @@
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // выходToolStripMenuItem
@@ -253,7 +253,7 @@
             this.редактироватьДанныеToolStripMenuItem,
             this.удалитьДанныеToolStripMenuItem});
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.помощьToolStripMenuItem.Text = "Инструменты";
             // 
             // обновитьToolStripMenuItem
@@ -308,21 +308,21 @@
             // преподавательДобавитьToolStripMenuItem
             // 
             this.преподавательДобавитьToolStripMenuItem.Name = "преподавательДобавитьToolStripMenuItem";
-            this.преподавательДобавитьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.преподавательДобавитьToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.преподавательДобавитьToolStripMenuItem.Text = "Преподаватель";
             this.преподавательДобавитьToolStripMenuItem.Click += new System.EventHandler(this.преподавательДобавитьToolStripMenuItem_Click);
             // 
             // ученикДобавитьToolStripMenuItem
             // 
             this.ученикДобавитьToolStripMenuItem.Name = "ученикДобавитьToolStripMenuItem";
-            this.ученикДобавитьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ученикДобавитьToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.ученикДобавитьToolStripMenuItem.Text = "Ученик";
             this.ученикДобавитьToolStripMenuItem.Click += new System.EventHandler(this.УченикДобавитьToolStripMenuItem_Click);
             // 
             // расписаниеToolStripMenuItem1
             // 
             this.расписаниеToolStripMenuItem1.Name = "расписаниеToolStripMenuItem1";
-            this.расписаниеToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.расписаниеToolStripMenuItem1.Size = new System.Drawing.Size(200, 26);
             this.расписаниеToolStripMenuItem1.Text = "Расписание";
             // 
             // редактироватьДанныеToolStripMenuItem
@@ -844,6 +844,18 @@
             this.вклУченики.Size = new System.Drawing.Size(1491, 577);
             this.вклУченики.TabIndex = 3;
             this.вклУченики.Text = "Список учеников";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Info;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(971, 496);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(494, 60);
+            this.label5.TabIndex = 115;
+            this.label5.Text = "Выберите команду в меню Инструменты \r\nдля работы с данными об Учениках";
             // 
             // грУдалитьУченик
             // 
@@ -1701,7 +1713,7 @@
             this.вклПитание.Controls.Add(this.textBox3);
             this.вклПитание.Controls.Add(this.textBox2);
             this.вклПитание.Controls.Add(this.textBox1);
-            this.вклПитание.Controls.Add(this.button18);
+            this.вклПитание.Controls.Add(this.ДобавитьОплату);
             this.вклПитание.Controls.Add(this.label48);
             this.вклПитание.Controls.Add(this.label46);
             this.вклПитание.Controls.Add(this.label45);
@@ -1712,8 +1724,8 @@
             this.вклПитание.Controls.Add(this.pictureBox1);
             this.вклПитание.Controls.Add(this.label39);
             this.вклПитание.Controls.Add(this.label44);
-            this.вклПитание.Controls.Add(this.button16);
-            this.вклПитание.Controls.Add(this.button17);
+            this.вклПитание.Controls.Add(this.ОтменитьПоиск);
+            this.вклПитание.Controls.Add(this.НайтиОплату);
             this.вклПитание.Controls.Add(this.label47);
             this.вклПитание.Controls.Add(this.label52);
             this.вклПитание.Location = new System.Drawing.Point(4, 25);
@@ -1722,6 +1734,73 @@
             this.вклПитание.Size = new System.Drawing.Size(1491, 577);
             this.вклПитание.TabIndex = 5;
             this.вклПитание.Text = "Питание";
+            // 
+            // ПитаниеСписок
+            // 
+            this.ПитаниеСписок.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ПитаниеСписок.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Питание_ID,
+            this.Питание_Фамилия,
+            this.Питание_Имя,
+            this.Питание_Отчество,
+            this.Питание_Класс,
+            this.Питание_Номер,
+            this.Питание_Сумма});
+            this.ПитаниеСписок.Location = new System.Drawing.Point(25, 66);
+            this.ПитаниеСписок.Name = "ПитаниеСписок";
+            this.ПитаниеСписок.RowHeadersWidth = 51;
+            this.ПитаниеСписок.RowTemplate.Height = 24;
+            this.ПитаниеСписок.Size = new System.Drawing.Size(838, 477);
+            this.ПитаниеСписок.TabIndex = 130;
+            // 
+            // Питание_ID
+            // 
+            this.Питание_ID.HeaderText = "ID";
+            this.Питание_ID.MinimumWidth = 6;
+            this.Питание_ID.Name = "Питание_ID";
+            this.Питание_ID.Width = 40;
+            // 
+            // Питание_Фамилия
+            // 
+            this.Питание_Фамилия.HeaderText = "Фамилия";
+            this.Питание_Фамилия.MinimumWidth = 6;
+            this.Питание_Фамилия.Name = "Питание_Фамилия";
+            this.Питание_Фамилия.Width = 125;
+            // 
+            // Питание_Имя
+            // 
+            this.Питание_Имя.HeaderText = "Имя";
+            this.Питание_Имя.MinimumWidth = 6;
+            this.Питание_Имя.Name = "Питание_Имя";
+            this.Питание_Имя.Width = 125;
+            // 
+            // Питание_Отчество
+            // 
+            this.Питание_Отчество.HeaderText = "Отчество";
+            this.Питание_Отчество.MinimumWidth = 6;
+            this.Питание_Отчество.Name = "Питание_Отчество";
+            this.Питание_Отчество.Width = 125;
+            // 
+            // Питание_Класс
+            // 
+            this.Питание_Класс.HeaderText = "Класс";
+            this.Питание_Класс.MinimumWidth = 6;
+            this.Питание_Класс.Name = "Питание_Класс";
+            this.Питание_Класс.Width = 50;
+            // 
+            // Питание_Номер
+            // 
+            this.Питание_Номер.HeaderText = "Номер";
+            this.Питание_Номер.MinimumWidth = 6;
+            this.Питание_Номер.Name = "Питание_Номер";
+            this.Питание_Номер.Width = 125;
+            // 
+            // Питание_Сумма
+            // 
+            this.Питание_Сумма.HeaderText = "Сумма";
+            this.Питание_Сумма.MinimumWidth = 6;
+            this.Питание_Сумма.Name = "Питание_Сумма";
+            this.Питание_Сумма.Width = 125;
             // 
             // textBox10
             // 
@@ -1755,17 +1834,17 @@
             this.textBox1.Size = new System.Drawing.Size(223, 22);
             this.textBox1.TabIndex = 123;
             // 
-            // button18
+            // ДобавитьОплату
             // 
-            this.button18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button18.Location = new System.Drawing.Point(1184, 477);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(231, 50);
-            this.button18.TabIndex = 122;
-            this.button18.Text = "Добавить оплату";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.ДобавитьОплату.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ДобавитьОплату.Location = new System.Drawing.Point(1184, 477);
+            this.ДобавитьОплату.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ДобавитьОплату.Name = "ДобавитьОплату";
+            this.ДобавитьОплату.Size = new System.Drawing.Size(231, 50);
+            this.ДобавитьОплату.TabIndex = 122;
+            this.ДобавитьОплату.Text = "Добавить оплату";
+            this.ДобавитьОплату.UseVisualStyleBackColor = true;
+            this.ДобавитьОплату.Click += new System.EventHandler(this.ДобавитьОплату_Click);
             // 
             // label48
             // 
@@ -1897,31 +1976,31 @@
             this.label44.TabIndex = 112;
             this.label44.Text = "Введите ID - ученика";
             // 
-            // button16
+            // ОтменитьПоиск
             // 
-            this.button16.BackColor = System.Drawing.SystemColors.Window;
-            this.button16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button16.Location = new System.Drawing.Point(499, 10);
-            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(300, 34);
-            this.button16.TabIndex = 111;
-            this.button16.Text = "Отменить сортировку";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.ОтменитьПоиск.BackColor = System.Drawing.SystemColors.Window;
+            this.ОтменитьПоиск.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ОтменитьПоиск.Location = new System.Drawing.Point(499, 10);
+            this.ОтменитьПоиск.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ОтменитьПоиск.Name = "ОтменитьПоиск";
+            this.ОтменитьПоиск.Size = new System.Drawing.Size(300, 34);
+            this.ОтменитьПоиск.TabIndex = 111;
+            this.ОтменитьПоиск.Text = "Отменить сортировку";
+            this.ОтменитьПоиск.UseVisualStyleBackColor = false;
+            this.ОтменитьПоиск.Click += new System.EventHandler(this.ОтменитьПоиск_Click);
             // 
-            // button17
+            // НайтиОплату
             // 
-            this.button17.BackColor = System.Drawing.SystemColors.Window;
-            this.button17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button17.Location = new System.Drawing.Point(396, 10);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(97, 34);
-            this.button17.TabIndex = 110;
-            this.button17.Text = "Найти";
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.НайтиОплату.BackColor = System.Drawing.SystemColors.Window;
+            this.НайтиОплату.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.НайтиОплату.Location = new System.Drawing.Point(396, 10);
+            this.НайтиОплату.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.НайтиОплату.Name = "НайтиОплату";
+            this.НайтиОплату.Size = new System.Drawing.Size(97, 34);
+            this.НайтиОплату.TabIndex = 110;
+            this.НайтиОплату.Text = "Найти";
+            this.НайтиОплату.UseVisualStyleBackColor = false;
+            this.НайтиОплату.Click += new System.EventHandler(this.НайтиОплату_Click);
             // 
             // label47
             // 
@@ -1979,85 +2058,6 @@
             this.database1DataSetBindingSource1.DataSource = this.database1DataSet;
             this.database1DataSetBindingSource1.Position = 0;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Info;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(971, 496);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(494, 60);
-            this.label5.TabIndex = 115;
-            this.label5.Text = "Выберите команду в меню Инструменты \r\nдля работы с данными об Учениках";
-            // 
-            // ПитаниеСписок
-            // 
-            this.ПитаниеСписок.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ПитаниеСписок.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Питание_ID,
-            this.Питание_Фамилия,
-            this.Питание_Имя,
-            this.Питание_Отчество,
-            this.Питание_Класс,
-            this.Питание_Номер,
-            this.Питание_Сумма});
-            this.ПитаниеСписок.Location = new System.Drawing.Point(25, 66);
-            this.ПитаниеСписок.Name = "ПитаниеСписок";
-            this.ПитаниеСписок.RowHeadersWidth = 51;
-            this.ПитаниеСписок.RowTemplate.Height = 24;
-            this.ПитаниеСписок.Size = new System.Drawing.Size(838, 477);
-            this.ПитаниеСписок.TabIndex = 130;
-            // 
-            // Питание_ID
-            // 
-            this.Питание_ID.HeaderText = "ID";
-            this.Питание_ID.MinimumWidth = 6;
-            this.Питание_ID.Name = "Питание_ID";
-            this.Питание_ID.Width = 40;
-            // 
-            // Питание_Фамилия
-            // 
-            this.Питание_Фамилия.HeaderText = "Фамилия";
-            this.Питание_Фамилия.MinimumWidth = 6;
-            this.Питание_Фамилия.Name = "Питание_Фамилия";
-            this.Питание_Фамилия.Width = 125;
-            // 
-            // Питание_Имя
-            // 
-            this.Питание_Имя.HeaderText = "Имя";
-            this.Питание_Имя.MinimumWidth = 6;
-            this.Питание_Имя.Name = "Питание_Имя";
-            this.Питание_Имя.Width = 125;
-            // 
-            // Питание_Отчество
-            // 
-            this.Питание_Отчество.HeaderText = "Отчество";
-            this.Питание_Отчество.MinimumWidth = 6;
-            this.Питание_Отчество.Name = "Питание_Отчество";
-            this.Питание_Отчество.Width = 125;
-            // 
-            // Питание_Класс
-            // 
-            this.Питание_Класс.HeaderText = "Класс";
-            this.Питание_Класс.MinimumWidth = 6;
-            this.Питание_Класс.Name = "Питание_Класс";
-            this.Питание_Класс.Width = 50;
-            // 
-            // Питание_Номер
-            // 
-            this.Питание_Номер.HeaderText = "Номер";
-            this.Питание_Номер.MinimumWidth = 6;
-            this.Питание_Номер.Name = "Питание_Номер";
-            this.Питание_Номер.Width = 125;
-            // 
-            // Питание_Сумма
-            // 
-            this.Питание_Сумма.HeaderText = "Сумма";
-            this.Питание_Сумма.MinimumWidth = 6;
-            this.Питание_Сумма.Name = "Питание_Сумма";
-            this.Питание_Сумма.Width = 125;
-            // 
             // Администратор
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2097,13 +2097,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.СоставлениеРасписания)).EndInit();
             this.вклПитание.ResumeLayout(false);
             this.вклПитание.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2208,14 +2208,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button ОтменитьПоиск;
+        private System.Windows.Forms.Button НайтиОплату;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button ДобавитьОплату;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
