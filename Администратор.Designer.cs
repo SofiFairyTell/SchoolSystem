@@ -231,7 +231,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1493, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1493, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -392,7 +392,7 @@
             this.вклУчителя.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.вклУчителя.Name = "вклУчителя";
             this.вклУчителя.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.вклУчителя.Size = new System.Drawing.Size(1307, 1015);
+            this.вклУчителя.Size = new System.Drawing.Size(1485, 771);
             this.вклУчителя.TabIndex = 0;
             this.вклУчителя.Text = "Список преподавателей";
             // 
@@ -846,7 +846,7 @@
             this.вклУченики.Location = new System.Drawing.Point(4, 25);
             this.вклУченики.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.вклУченики.Name = "вклУченики";
-            this.вклУченики.Size = new System.Drawing.Size(1512, 577);
+            this.вклУченики.Size = new System.Drawing.Size(1485, 771);
             this.вклУченики.TabIndex = 3;
             this.вклУченики.Text = "Список учеников";
             // 
@@ -1302,7 +1302,7 @@
             this.tabControl1.Controls.Add(this.вклПитание);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Location = new System.Drawing.Point(0, 30);
+            this.tabControl1.Location = new System.Drawing.Point(0, 28);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1751,7 +1751,7 @@
             this.вклПитание.Location = new System.Drawing.Point(4, 25);
             this.вклПитание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.вклПитание.Name = "вклПитание";
-            this.вклПитание.Size = new System.Drawing.Size(1512, 577);
+            this.вклПитание.Size = new System.Drawing.Size(1485, 771);
             this.вклПитание.TabIndex = 5;
             this.вклПитание.Text = "Питание";
             // 

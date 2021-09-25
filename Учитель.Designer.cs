@@ -49,6 +49,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.УчительОценки = new System.Windows.Forms.TabPage();
             this.УчительИнфо = new System.Windows.Forms.TabPage();
+            this.НайтиМоеРасписание = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.полеОтчество = new System.Windows.Forms.TextBox();
             this.полеПредмет = new System.Windows.Forms.ComboBox();
             this.полеИмя = new System.Windows.Forms.TextBox();
             this.полеФамилия = new System.Windows.Forms.TextBox();
@@ -69,9 +72,8 @@
             this.НайтиКласс = new System.Windows.Forms.Button();
             this.ВыборКласса = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.полеОтчество = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.НайтиМоеРасписание = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.УчительID = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.УчительУченики.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.УченикиСписок)).BeginInit();
@@ -91,7 +93,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1030, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1030, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -102,7 +104,7 @@
             this.печатьToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // правкаToolStripMenuItem
@@ -129,9 +131,8 @@
             this.обновлениеРасписанияToolStripMenuItem,
             this.обновитьИнформациюОбУченикеToolStripMenuItem});
             this.инструментыToolStripMenuItem.Name = "инструментыToolStripMenuItem";
-            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.инструментыToolStripMenuItem.Text = "Инструменты";
-            this.инструментыToolStripMenuItem.Click += new System.EventHandler(this.инструментыToolStripMenuItem_Click);
             // 
             // обновлениеРасписанияToolStripMenuItem
             // 
@@ -301,6 +302,37 @@
             this.УчительИнфо.TabIndex = 0;
             this.УчительИнфо.Text = "Информация об учителе";
             // 
+            // НайтиМоеРасписание
+            // 
+            this.НайтиМоеРасписание.BackColor = System.Drawing.Color.Tomato;
+            this.НайтиМоеРасписание.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.НайтиМоеРасписание.Location = new System.Drawing.Point(391, 205);
+            this.НайтиМоеРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.НайтиМоеРасписание.Name = "НайтиМоеРасписание";
+            this.НайтиМоеРасписание.Size = new System.Drawing.Size(265, 34);
+            this.НайтиМоеРасписание.TabIndex = 114;
+            this.НайтиМоеРасписание.Text = "Найти мое расписание";
+            this.НайтиМоеРасписание.UseVisualStyleBackColor = false;
+            this.НайтиМоеРасписание.Click += new System.EventHandler(this.НайтиМоеРасписание_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(260, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.TabIndex = 109;
+            this.label2.Text = "Отчество";
+            // 
+            // полеОтчество
+            // 
+            this.полеОтчество.BackColor = System.Drawing.SystemColors.Window;
+            this.полеОтчество.Location = new System.Drawing.Point(336, 103);
+            this.полеОтчество.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.полеОтчество.Name = "полеОтчество";
+            this.полеОтчество.Size = new System.Drawing.Size(320, 22);
+            this.полеОтчество.TabIndex = 108;
+            // 
             // полеПредмет
             // 
             this.полеПредмет.BackColor = System.Drawing.SystemColors.Window;
@@ -389,6 +421,8 @@
             // 
             // УчительРасписание
             // 
+            this.УчительРасписание.Controls.Add(this.УчительID);
+            this.УчительРасписание.Controls.Add(this.label3);
             this.УчительРасписание.Controls.Add(this.РасписаниеЗанятий);
             this.УчительРасписание.Controls.Add(this.ОтменаСортировкиРасписание);
             this.УчительРасписание.Controls.Add(this.НайтиКласс);
@@ -413,11 +447,11 @@
             this.ФИО_учителя,
             this.ДеньНедели,
             this.Н_класса});
-            this.РасписаниеЗанятий.Location = new System.Drawing.Point(23, 61);
+            this.РасписаниеЗанятий.Location = new System.Drawing.Point(23, 101);
             this.РасписаниеЗанятий.Name = "РасписаниеЗанятий";
             this.РасписаниеЗанятий.RowHeadersWidth = 51;
             this.РасписаниеЗанятий.RowTemplate.Height = 24;
-            this.РасписаниеЗанятий.Size = new System.Drawing.Size(947, 358);
+            this.РасписаниеЗанятий.Size = new System.Drawing.Size(947, 318);
             this.РасписаниеЗанятий.TabIndex = 115;
             // 
             // Кабинет
@@ -479,10 +513,10 @@
             // 
             this.НайтиКласс.BackColor = System.Drawing.SystemColors.Window;
             this.НайтиКласс.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.НайтиКласс.Location = new System.Drawing.Point(337, 6);
+            this.НайтиКласс.Location = new System.Drawing.Point(467, 47);
             this.НайтиКласс.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.НайтиКласс.Name = "НайтиКласс";
-            this.НайтиКласс.Size = new System.Drawing.Size(97, 34);
+            this.НайтиКласс.Size = new System.Drawing.Size(300, 34);
             this.НайтиКласс.TabIndex = 113;
             this.НайтиКласс.Text = "Найти";
             this.НайтиКласс.UseVisualStyleBackColor = false;
@@ -501,10 +535,10 @@
             "6",
             "7",
             "8"});
-            this.ВыборКласса.Location = new System.Drawing.Point(176, 11);
+            this.ВыборКласса.Location = new System.Drawing.Point(208, 11);
             this.ВыборКласса.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ВыборКласса.Name = "ВыборКласса";
-            this.ВыборКласса.Size = new System.Drawing.Size(155, 24);
+            this.ВыборКласса.Size = new System.Drawing.Size(237, 24);
             this.ВыборКласса.TabIndex = 112;
             // 
             // label1
@@ -518,36 +552,41 @@
             this.label1.TabIndex = 111;
             this.label1.Text = "Выбрать класс";
             // 
-            // полеОтчество
+            // label3
             // 
-            this.полеОтчество.BackColor = System.Drawing.SystemColors.Window;
-            this.полеОтчество.Location = new System.Drawing.Point(336, 103);
-            this.полеОтчество.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.полеОтчество.Name = "полеОтчество";
-            this.полеОтчество.Size = new System.Drawing.Size(320, 22);
-            this.полеОтчество.TabIndex = 108;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(19, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(171, 22);
+            this.label3.TabIndex = 116;
+            this.label3.Text = "Выберите учителя";
             // 
-            // label2
+            // УчительID
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(260, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
-            this.label2.TabIndex = 109;
-            this.label2.Text = "Отчество";
-            // 
-            // НайтиМоеРасписание
-            // 
-            this.НайтиМоеРасписание.BackColor = System.Drawing.SystemColors.Window;
-            this.НайтиМоеРасписание.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.НайтиМоеРасписание.Location = new System.Drawing.Point(559, 205);
-            this.НайтиМоеРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.НайтиМоеРасписание.Name = "НайтиМоеРасписание";
-            this.НайтиМоеРасписание.Size = new System.Drawing.Size(97, 34);
-            this.НайтиМоеРасписание.TabIndex = 114;
-            this.НайтиМоеРасписание.Text = "Найти мое расписание";
-            this.НайтиМоеРасписание.UseVisualStyleBackColor = false;
-            this.НайтиМоеРасписание.Click += new System.EventHandler(this.НайтиМоеРасписание_Click);
+            this.УчительID.AutoCompleteCustomSource.AddRange(new string[] {
+            "8:30-9:15",
+            "9:30-10:15",
+            "10:30-11:15",
+            "11:30-12:15",
+            "12:30-13:15",
+            "13:30-14:15",
+            "14:30-15:15",
+            "15:30-16:15"});
+            this.УчительID.BackColor = System.Drawing.SystemColors.Window;
+            this.УчительID.FormattingEnabled = true;
+            this.УчительID.Items.AddRange(new object[] {
+            "Петров Иван Иванович   ",
+            "Иванова Галина Сергеевна     ",
+            "Смирнов Петр Алексеевич   ",
+            "Иванов Иван Иванович ",
+            "Романов Сергей Иванович"});
+            this.УчительID.Location = new System.Drawing.Point(208, 57);
+            this.УчительID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.УчительID.Name = "УчительID";
+            this.УчительID.Size = new System.Drawing.Size(237, 24);
+            this.УчительID.TabIndex = 118;
             // 
             // Учитель
             // 
@@ -623,5 +662,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox полеОтчество;
         private System.Windows.Forms.Button НайтиМоеРасписание;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox УчительID;
     }
 }

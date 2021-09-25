@@ -18,7 +18,6 @@ namespace WindowsFormsApp1
 
         private async void Form1_Load(object sender, EventArgs e) //отображение информации которая имеется в базе данных
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet6.Учитель". При необходимости она может быть перемещена или удалена.
             this.учительTableAdapter.Fill(this.database1DataSet6.Учитель);
             sqlConnection = new SqlConnection(connectionString); //ученики
             await sqlConnection.OpenAsync();
