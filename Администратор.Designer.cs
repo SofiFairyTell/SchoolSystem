@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup16 = new System.Windows.Forms.ListViewGroup("Id", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup17 = new System.Windows.Forms.ListViewGroup("Фамилия", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup18 = new System.Windows.Forms.ListViewGroup("Имя", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup19 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup20 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Администратор));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -160,14 +155,6 @@
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.вклПитание = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.Id_Ученика = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Фамилия = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Имя = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Отчество = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Класс = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Номер_документа = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Сумма = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -195,6 +182,14 @@
             this.ученикTableAdapter1 = new WindowsFormsApp1.Database1DataSet2TableAdapters.УченикTableAdapter();
             this.database1DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
+            this.ПитаниеСписок = new System.Windows.Forms.DataGridView();
+            this.Питание_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Фамилия = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Имя = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Отчество = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Класс = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Номер = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Питание_Сумма = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.вклУчителя.SuspendLayout();
             this.грУдалить.SuspendLayout();
@@ -218,6 +213,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -230,7 +226,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1499, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1499, 30);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -239,7 +235,7 @@
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // выходToolStripMenuItem
@@ -257,7 +253,7 @@
             this.редактироватьДанныеToolStripMenuItem,
             this.удалитьДанныеToolStripMenuItem});
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.помощьToolStripMenuItem.Text = "Инструменты";
             // 
             // обновитьToolStripMenuItem
@@ -312,21 +308,21 @@
             // преподавательДобавитьToolStripMenuItem
             // 
             this.преподавательДобавитьToolStripMenuItem.Name = "преподавательДобавитьToolStripMenuItem";
-            this.преподавательДобавитьToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.преподавательДобавитьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.преподавательДобавитьToolStripMenuItem.Text = "Преподаватель";
             this.преподавательДобавитьToolStripMenuItem.Click += new System.EventHandler(this.преподавательДобавитьToolStripMenuItem_Click);
             // 
             // ученикДобавитьToolStripMenuItem
             // 
             this.ученикДобавитьToolStripMenuItem.Name = "ученикДобавитьToolStripMenuItem";
-            this.ученикДобавитьToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.ученикДобавитьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.ученикДобавитьToolStripMenuItem.Text = "Ученик";
             this.ученикДобавитьToolStripMenuItem.Click += new System.EventHandler(this.УченикДобавитьToolStripMenuItem_Click);
             // 
             // расписаниеToolStripMenuItem1
             // 
             this.расписаниеToolStripMenuItem1.Name = "расписаниеToolStripMenuItem1";
-            this.расписаниеToolStripMenuItem1.Size = new System.Drawing.Size(200, 26);
+            this.расписаниеToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.расписаниеToolStripMenuItem1.Text = "Расписание";
             // 
             // редактироватьДанныеToolStripMenuItem
@@ -1700,7 +1696,7 @@
             // вклПитание
             // 
             this.вклПитание.BackColor = System.Drawing.Color.Linen;
-            this.вклПитание.Controls.Add(this.listView1);
+            this.вклПитание.Controls.Add(this.ПитаниеСписок);
             this.вклПитание.Controls.Add(this.textBox10);
             this.вклПитание.Controls.Add(this.textBox3);
             this.вклПитание.Controls.Add(this.textBox2);
@@ -1727,69 +1723,6 @@
             this.вклПитание.TabIndex = 5;
             this.вклПитание.Text = "Питание";
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Id_Ученика,
-            this.Фамилия,
-            this.Имя,
-            this.Отчество,
-            this.Класс,
-            this.Номер_документа,
-            this.Сумма});
-            listViewGroup16.Header = "Id";
-            listViewGroup16.Name = "listViewGroup1";
-            listViewGroup17.Header = "Фамилия";
-            listViewGroup17.Name = "listViewGroup2";
-            listViewGroup18.Header = "Имя";
-            listViewGroup18.Name = "listViewGroup3";
-            listViewGroup19.Header = "ListViewGroup";
-            listViewGroup19.Name = "listViewGroup4";
-            listViewGroup20.Header = "ListViewGroup";
-            listViewGroup20.Name = "listViewGroup5";
-            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup16,
-            listViewGroup17,
-            listViewGroup18,
-            listViewGroup19,
-            listViewGroup20});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(25, 66);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(775, 411);
-            this.listView1.TabIndex = 129;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.SmallIcon;
-            // 
-            // Id_Ученика
-            // 
-            this.Id_Ученика.Text = "Id_Ученика";
-            // 
-            // Фамилия
-            // 
-            this.Фамилия.Text = "Фамилия";
-            // 
-            // Имя
-            // 
-            this.Имя.Text = "Имя";
-            // 
-            // Отчество
-            // 
-            this.Отчество.Text = "Отчество";
-            // 
-            // Класс
-            // 
-            this.Класс.Text = "Класс";
-            // 
-            // Номер_документа
-            // 
-            this.Номер_документа.Text = "Номер_документа";
-            // 
-            // Сумма
-            // 
-            this.Сумма.Text = "Сумма";
-            // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(239, 22);
@@ -1800,10 +1733,10 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(1084, 426);
+            this.textBox3.Location = new System.Drawing.Point(1192, 426);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(320, 22);
+            this.textBox3.Size = new System.Drawing.Size(223, 22);
             this.textBox3.TabIndex = 125;
             // 
             // textBox2
@@ -1811,21 +1744,21 @@
             this.textBox2.Location = new System.Drawing.Point(1192, 383);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(320, 22);
+            this.textBox2.Size = new System.Drawing.Size(223, 22);
             this.textBox2.TabIndex = 124;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1069, 341);
+            this.textBox1.Location = new System.Drawing.Point(1192, 342);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(320, 22);
+            this.textBox1.Size = new System.Drawing.Size(223, 22);
             this.textBox1.TabIndex = 123;
             // 
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button18.Location = new System.Drawing.Point(1043, 470);
+            this.button18.Location = new System.Drawing.Point(1184, 477);
             this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(231, 50);
@@ -2058,6 +1991,73 @@
             this.label5.TabIndex = 115;
             this.label5.Text = "Выберите команду в меню Инструменты \r\nдля работы с данными об Учениках";
             // 
+            // ПитаниеСписок
+            // 
+            this.ПитаниеСписок.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ПитаниеСписок.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Питание_ID,
+            this.Питание_Фамилия,
+            this.Питание_Имя,
+            this.Питание_Отчество,
+            this.Питание_Класс,
+            this.Питание_Номер,
+            this.Питание_Сумма});
+            this.ПитаниеСписок.Location = new System.Drawing.Point(25, 66);
+            this.ПитаниеСписок.Name = "ПитаниеСписок";
+            this.ПитаниеСписок.RowHeadersWidth = 51;
+            this.ПитаниеСписок.RowTemplate.Height = 24;
+            this.ПитаниеСписок.Size = new System.Drawing.Size(838, 477);
+            this.ПитаниеСписок.TabIndex = 130;
+            // 
+            // Питание_ID
+            // 
+            this.Питание_ID.HeaderText = "ID";
+            this.Питание_ID.MinimumWidth = 6;
+            this.Питание_ID.Name = "Питание_ID";
+            this.Питание_ID.Width = 40;
+            // 
+            // Питание_Фамилия
+            // 
+            this.Питание_Фамилия.HeaderText = "Фамилия";
+            this.Питание_Фамилия.MinimumWidth = 6;
+            this.Питание_Фамилия.Name = "Питание_Фамилия";
+            this.Питание_Фамилия.Width = 125;
+            // 
+            // Питание_Имя
+            // 
+            this.Питание_Имя.HeaderText = "Имя";
+            this.Питание_Имя.MinimumWidth = 6;
+            this.Питание_Имя.Name = "Питание_Имя";
+            this.Питание_Имя.Width = 125;
+            // 
+            // Питание_Отчество
+            // 
+            this.Питание_Отчество.HeaderText = "Отчество";
+            this.Питание_Отчество.MinimumWidth = 6;
+            this.Питание_Отчество.Name = "Питание_Отчество";
+            this.Питание_Отчество.Width = 125;
+            // 
+            // Питание_Класс
+            // 
+            this.Питание_Класс.HeaderText = "Класс";
+            this.Питание_Класс.MinimumWidth = 6;
+            this.Питание_Класс.Name = "Питание_Класс";
+            this.Питание_Класс.Width = 50;
+            // 
+            // Питание_Номер
+            // 
+            this.Питание_Номер.HeaderText = "Номер";
+            this.Питание_Номер.MinimumWidth = 6;
+            this.Питание_Номер.Name = "Питание_Номер";
+            this.Питание_Номер.Width = 125;
+            // 
+            // Питание_Сумма
+            // 
+            this.Питание_Сумма.HeaderText = "Сумма";
+            this.Питание_Сумма.MinimumWidth = 6;
+            this.Питание_Сумма.Name = "Питание_Сумма";
+            this.Питание_Сумма.Width = 125;
+            // 
             // Администратор
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2103,6 +2103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ученикBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ПитаниеСписок)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2222,14 +2223,6 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.ToolStripMenuItem питаниеToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader Id_Ученика;
-        private System.Windows.Forms.ColumnHeader Фамилия;
-        private System.Windows.Forms.ColumnHeader Имя;
-        private System.Windows.Forms.ColumnHeader Отчество;
-        private System.Windows.Forms.ColumnHeader Класс;
-        private System.Windows.Forms.ColumnHeader Номер_документа;
-        private System.Windows.Forms.ColumnHeader Сумма;
         private System.Windows.Forms.BindingSource database1DataSetBindingSource1;
         private System.Windows.Forms.DataGridView СоставлениеРасписания;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -2269,6 +2262,14 @@
         private System.Windows.Forms.GroupBox грУдалитьУченик;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView ПитаниеСписок;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Питание_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Фамилия;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Имя;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Отчество;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Класс;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Номер;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Питание_Сумма;
     }
 }
 
