@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Id", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Фамилия", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Имя", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup11 = new System.Windows.Forms.ListViewGroup("Id", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup12 = new System.Windows.Forms.ListViewGroup("Фамилия", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Имя", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Администратор));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -194,6 +194,7 @@
             this.ученикBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ученикTableAdapter1 = new WindowsFormsApp1.Database1DataSet2TableAdapters.УченикTableAdapter();
             this.database1DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.вклУчителя.SuspendLayout();
             this.грУдалить.SuspendLayout();
@@ -832,6 +833,7 @@
             // 
             this.вклУченики.BackColor = System.Drawing.Color.Linen;
             this.вклУченики.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.вклУченики.Controls.Add(this.label5);
             this.вклУченики.Controls.Add(this.грУдалитьУченик);
             this.вклУченики.Controls.Add(this.грДобавитьУченик);
             this.вклУченики.Controls.Add(this.УченикиСписок);
@@ -1335,11 +1337,11 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.СоставлениеРасписания.Location = new System.Drawing.Point(27, 116);
+            this.СоставлениеРасписания.Location = new System.Drawing.Point(22, 62);
             this.СоставлениеРасписания.Name = "СоставлениеРасписания";
             this.СоставлениеРасписания.RowHeadersWidth = 51;
             this.СоставлениеРасписания.RowTemplate.Height = 24;
-            this.СоставлениеРасписания.Size = new System.Drawing.Size(839, 453);
+            this.СоставлениеРасписания.Size = new System.Drawing.Size(948, 462);
             this.СоставлениеРасписания.TabIndex = 111;
             // 
             // dataGridViewTextBoxColumn1
@@ -1388,10 +1390,10 @@
             // 
             this.ОтменаСортировкиСоставление.BackColor = System.Drawing.SystemColors.Window;
             this.ОтменаСортировкиСоставление.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ОтменаСортировкиСоставление.Location = new System.Drawing.Point(489, 57);
+            this.ОтменаСортировкиСоставление.Location = new System.Drawing.Point(468, 18);
             this.ОтменаСортировкиСоставление.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ОтменаСортировкиСоставление.Name = "ОтменаСортировкиСоставление";
-            this.ОтменаСортировкиСоставление.Size = new System.Drawing.Size(300, 34);
+            this.ОтменаСортировкиСоставление.Size = new System.Drawing.Size(216, 36);
             this.ОтменаСортировкиСоставление.TabIndex = 109;
             this.ОтменаСортировкиСоставление.Text = "Отменить сортировку";
             this.ОтменаСортировкиСоставление.UseVisualStyleBackColor = false;
@@ -1413,7 +1415,7 @@
             this.comboBox12.Items.AddRange(new object[] {
             "Петров Петр Петрович",
             "Иванов Иван иванович"});
-            this.comboBox12.Location = new System.Drawing.Point(1131, 270);
+            this.comboBox12.Location = new System.Drawing.Point(1237, 97);
             this.comboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(237, 24);
@@ -1423,10 +1425,10 @@
             // 
             this.button11.BackColor = System.Drawing.SystemColors.Window;
             this.button11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.Location = new System.Drawing.Point(341, 55);
+            this.button11.Location = new System.Drawing.Point(335, 20);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(97, 34);
+            this.button11.Size = new System.Drawing.Size(116, 34);
             this.button11.TabIndex = 54;
             this.button11.Text = "Найти";
             this.button11.UseVisualStyleBackColor = false;
@@ -1448,10 +1450,10 @@
             "9",
             "10",
             "11"});
-            this.КлассыСписок.Location = new System.Drawing.Point(225, 60);
+            this.КлассыСписок.Location = new System.Drawing.Point(204, 25);
             this.КлассыСписок.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.КлассыСписок.Name = "КлассыСписок";
-            this.КлассыСписок.Size = new System.Drawing.Size(85, 24);
+            this.КлассыСписок.Size = new System.Drawing.Size(110, 24);
             this.КлассыСписок.TabIndex = 53;
             // 
             // label37
@@ -1459,20 +1461,20 @@
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label37.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label37.Location = new System.Drawing.Point(24, 62);
+            this.label37.Location = new System.Drawing.Point(18, 26);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(160, 22);
+            this.label37.Size = new System.Drawing.Size(151, 22);
             this.label37.TabIndex = 52;
-            this.label37.Text = "Выбретите класс";
+            this.label37.Text = "Выберите класс";
             // 
             // ДобавитьРасписание
             // 
             this.ДобавитьРасписание.BackColor = System.Drawing.SystemColors.Window;
             this.ДобавитьРасписание.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ДобавитьРасписание.Location = new System.Drawing.Point(1011, 383);
+            this.ДобавитьРасписание.Location = new System.Drawing.Point(1000, 386);
             this.ДобавитьРасписание.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ДобавитьРасписание.Name = "ДобавитьРасписание";
-            this.ДобавитьРасписание.Size = new System.Drawing.Size(284, 87);
+            this.ДобавитьРасписание.Size = new System.Drawing.Size(474, 62);
             this.ДобавитьРасписание.TabIndex = 51;
             this.ДобавитьРасписание.Text = "Добавить в расписание";
             this.ДобавитьРасписание.UseVisualStyleBackColor = false;
@@ -1483,11 +1485,11 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label38.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label38.Location = new System.Drawing.Point(888, 315);
+            this.label38.Location = new System.Drawing.Point(994, 311);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(196, 21);
+            this.label38.Size = new System.Drawing.Size(188, 21);
             this.label38.TabIndex = 50;
-            this.label38.Text = "Выбретите № кабинета";
+            this.label38.Text = "Выберите № кабинета";
             // 
             // comboBox13
             // 
@@ -1523,7 +1525,7 @@
             "18",
             "19",
             "20"});
-            this.comboBox13.Location = new System.Drawing.Point(1131, 313);
+            this.comboBox13.Location = new System.Drawing.Point(1237, 309);
             this.comboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(237, 24);
@@ -1534,7 +1536,7 @@
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label35.Location = new System.Drawing.Point(888, 270);
+            this.label35.Location = new System.Drawing.Point(991, 100);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(189, 21);
             this.label35.TabIndex = 47;
@@ -1545,11 +1547,11 @@
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label36.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label36.Location = new System.Drawing.Point(888, 220);
+            this.label36.Location = new System.Drawing.Point(993, 267);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(168, 21);
+            this.label36.Size = new System.Drawing.Size(160, 21);
             this.label36.TabIndex = 46;
-            this.label36.Text = "Выбретите предмет";
+            this.label36.Text = "Выберите предмет";
             // 
             // comboBox11
             // 
@@ -1569,7 +1571,7 @@
             "Математика",
             "Литература",
             "Окружающий мир"});
-            this.comboBox11.Location = new System.Drawing.Point(1131, 218);
+            this.comboBox11.Location = new System.Drawing.Point(1237, 264);
             this.comboBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(237, 24);
@@ -1580,22 +1582,22 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(888, 169);
+            this.label10.Location = new System.Drawing.Point(992, 230);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(201, 21);
+            this.label10.Size = new System.Drawing.Size(193, 21);
             this.label10.TabIndex = 42;
-            this.label10.Text = "Выбретите время урока";
+            this.label10.Text = "Выберите время урока";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(888, 121);
+            this.label4.Location = new System.Drawing.Point(991, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 21);
+            this.label4.Size = new System.Drawing.Size(191, 21);
             this.label4.TabIndex = 41;
-            this.label4.Text = "Выбретите день недели";
+            this.label4.Text = "Выберите день недели";
             // 
             // comboBox10
             // 
@@ -1617,7 +1619,7 @@
             "Четверг",
             "Пятница",
             "Суббота"});
-            this.comboBox10.Location = new System.Drawing.Point(1131, 118);
+            this.comboBox10.Location = new System.Drawing.Point(1237, 186);
             this.comboBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(237, 24);
@@ -1646,7 +1648,7 @@
             "14:30-15:15",
             "15:30-16:15",
             ""});
-            this.comboBox9.Location = new System.Drawing.Point(1131, 167);
+            this.comboBox9.Location = new System.Drawing.Point(1237, 227);
             this.comboBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(237, 24);
@@ -1657,7 +1659,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(21, 14);
+            this.label3.Location = new System.Drawing.Point(1079, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(279, 33);
             this.label3.TabIndex = 37;
@@ -1677,10 +1679,10 @@
             "6",
             "7",
             "8"});
-            this.comboBox8.Location = new System.Drawing.Point(1073, 66);
+            this.comboBox8.Location = new System.Drawing.Point(1237, 139);
             this.comboBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(85, 24);
+            this.comboBox8.Size = new System.Drawing.Size(237, 24);
             this.comboBox8.TabIndex = 35;
             // 
             // label2
@@ -1689,11 +1691,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(888, 68);
+            this.label2.Location = new System.Drawing.Point(991, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 21);
+            this.label2.Size = new System.Drawing.Size(138, 21);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Выбретите класс";
+            this.label2.Text = "Выберите класс";
             // 
             // вклПитание
             // 
@@ -1735,22 +1737,22 @@
             this.Класс,
             this.Номер_документа,
             this.Сумма});
-            listViewGroup1.Header = "Id";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "Фамилия";
-            listViewGroup2.Name = "listViewGroup2";
-            listViewGroup3.Header = "Имя";
-            listViewGroup3.Name = "listViewGroup3";
-            listViewGroup4.Header = "ListViewGroup";
-            listViewGroup4.Name = "listViewGroup4";
-            listViewGroup5.Header = "ListViewGroup";
-            listViewGroup5.Name = "listViewGroup5";
+            listViewGroup11.Header = "Id";
+            listViewGroup11.Name = "listViewGroup1";
+            listViewGroup12.Header = "Фамилия";
+            listViewGroup12.Name = "listViewGroup2";
+            listViewGroup13.Header = "Имя";
+            listViewGroup13.Name = "listViewGroup3";
+            listViewGroup14.Header = "ListViewGroup";
+            listViewGroup14.Name = "listViewGroup4";
+            listViewGroup15.Header = "ListViewGroup";
+            listViewGroup15.Name = "listViewGroup5";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3,
-            listViewGroup4,
-            listViewGroup5});
+            listViewGroup11,
+            listViewGroup12,
+            listViewGroup13,
+            listViewGroup14,
+            listViewGroup15});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(25, 66);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2044,6 +2046,18 @@
             this.database1DataSetBindingSource1.DataSource = this.database1DataSet;
             this.database1DataSetBindingSource1.Position = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Info;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(711, 487);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(494, 60);
+            this.label5.TabIndex = 115;
+            this.label5.Text = "Выберите команду в меню Инструменты \r\nдля работы с данными об Учениках";
+            // 
             // Администратор
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2254,6 +2268,7 @@
         private System.Windows.Forms.GroupBox грРедактироватьУченик;
         private System.Windows.Forms.GroupBox грУдалитьУченик;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
     }
 }
 
